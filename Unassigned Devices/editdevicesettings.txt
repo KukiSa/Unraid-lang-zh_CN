@@ -1,102 +1,101 @@
-Abort Device Script=
-Attach=
-Attach This Disk=
-Attaching=
-Automount=
-Click to select file or click Default button for the Device Script File=
-Default=
-Delete Device Script File=
-Detach=
-Detach This Disk=
-Detaching=
-Device Script=
-Device Script content=
-Disable Mount and Unmount Button=
-Disable Mount Button=
-Disk Name=
-Disk Serial=
-Edit Device Script=
-Enter Device Script File Name=
-Enter and Edit the Device Script that runs when a udev or operator event occurs=
-Enter the User Script File Name=
-Enter the User Script that will be using this device=
-Enter the volume to mount on this apfs partition=
-Load the default Device Script=
-Run in background=
-Mark this Device as passed through to a VM or Docker=
-Mount Device Read only=
-Mount Device when Plugged in or Array is Started=
-Mount ISO File when Array is Started=
-Mount Point=
-Mount Remote Share Read only=
-Mount Remote SMB or NFS Share when Array is Started=
-Note: Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share this device=
-Passed Through=
-Read Only=
-Run Device Script File in the background=
-Save your Device Script File=
-Save your Device Script File changes=
-Share Device with SMB and NFS=
-Share Remote Mount with SMB and NFS=
-Show all partitions on this device by default=
-Show Partitions=
-Source=
-Unassigned Devices Settings=
-Undo your changes since last Save=
-User Script=
-Volume=
-ZFS Volume=
+Abort Device Script=中止设备脚本
+Attach=连接
+Attach This Disk=连接此磁盘
+Attaching=正在连接
+Automount=自动挂载
+Click to select file or click Default button for the Device Script File=点击选择文件，或点击「默认」按钮指定设备脚本文件
+Default=默认
+Delete Device Script File=删除设备脚本文件
+Detach=断开
+Detach This Disk=断开此磁盘
+Detaching=正在断开
+Device Script=设备脚本
+Device Script content=设备脚本内容
+Disable Mount and Unmount Button=禁用挂载和卸载按钮
+Disable Mount Button=禁用挂载按钮
+Disk Name=磁盘名称
+Disk Serial=磁盘序列号
+Edit Device Script=编辑设备脚本
+Enter Device Script File Name=输入设备脚本文件名
+Enter and Edit the Device Script that runs when a udev or operator event occurs=输入并编辑在 udev 事件或手动操作发生时运行的设备脚本
+Enter the User Script File Name=输入用户脚本文件名
+Enter the User Script that will be using this device=输入将使用此设备的用户脚本
+Enter the volume to mount on this apfs partition=输入此 APFS 分区上要挂载的卷
+Load the default Device Script=加载默认设备脚本
+Run in background=在后台运行
+Mark this Device as passed through to a VM or Docker=将此设备标记为已直通 (Passthrough) 给虚拟机或 Docker
+Mount Device Read only=以只读方式挂载设备
+Mount Device when Plugged in or Array is Started=插入设备或启动阵列 (Array) 时挂载
+Mount ISO File when Array is Started=启动阵列 (Array) 时挂载 ISO 文件
+Mount Point=挂载点
+Mount Remote Share Read only=以只读方式挂载远程共享
+Mount Remote SMB or NFS Share when Array is Started=启动阵列 (Array) 时挂载远程 SMB 或 NFS 共享
+Note: Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share this device=注意：请在 Unassigned Devices 设置中启用 SMB 共享或 NFS 导出，才能共享此设备
+Passed Through=已直通 (Passthrough)
+Read Only=只读
+Run Device Script File in the background=在后台运行设备脚本文件
+Save your Device Script File=保存设备脚本文件
+Save your Device Script File changes=保存设备脚本文件的更改
+Share Device with SMB and NFS=通过 SMB 和 NFS 共享设备
+Share Remote Mount with SMB and NFS=通过 SMB 和 NFS 共享远程挂载
+Show all partitions on this device by default=默认显示此设备的所有分区
+Show Partitions=显示分区
+Source=源
+Unassigned Devices Settings=未分配设备 (Unassigned Devices) 设置
+Undo your changes since last Save=撤销自上次保存以来的更改
+User Script=用户脚本
+Volume=卷
+ZFS Volume=ZFS 卷
 
 ;
 ; Help
 ;
 :ud_edit_script_device_settings_plug:
-> Select the options for this device and mount point.
+> 选择此设备和挂载点的选项。
 :end
 
 :ud_edit_script_detach_plug:
-> Click **Detach** to detach the device. The device will then show in Historical Devices and can be Attached from the device settings there.
+> 点击**断开**可断开设备。随后设备会显示在历史设备中，可从那里的设备设置重新连接。
 :end
 
 :ud_edit_script_attach_plug:
-> Click **Attach** to attach a device that has been detached. This will act like the device was just installed and will auto mount if 'Auto Mount' is on. It will take a while for the device to show up in UD.
+> 点击**连接**可重新连接已断开的设备，相当于刚插入设备；如果已启用「自动挂载」，还会自动挂载。设备可能需要稍等才会出现在 UD 中。
 :end
 
 :ud_edit_script_abort_plug:
-> Click **Abort** to abort the device script.
+> 点击**中止**以中止设备脚本。
 :end
 
 :ud_disk_name_plug:
-> Enter the alias name for this device. This is the name you want to use to refer to this drive. Leave the name blank and the 'devX' will be assigned.
+> 输入此设备的别名，即你希望用来称呼此驱动器的名称。留空时分配 devX 名称。
 >
-> **Name:** 8 characters max, spaces converted to '_', minimal special characters allowed, name is case sensitive.
+> **名称**：最多 8 个字符，空格会转换为 '_'，仅允许少量特殊字符，区分大小写。
 >
-> **Note:** Cannot contain "dev" as the first characters. This is reserved for the 'devX' devices.
+> **注意**：不能以 dev 开头，此前缀保留给 devX 设备。
 :end
 
 :ud_edit_script_choose_name_plug:
-> This is the Script File that runs when the device is mounted. Choose your Script File name from the file selection dropdown, or enter your desired script.
+> 此脚本文件在设备挂载时运行。可从文件选择下拉列表中选择，或输入所需脚本。
 :end
 
 :ud_edit_user_script_choose_name_plug:
-> If you have the User Scripts plugin installed, you can have
-Unassigned Devices show the running status of the User Script that will be using this device. This field will only be enabled when a Device Script File exists.
+> 已安装 User Scripts 插件时，可让 Unassigned Devices 显示使用此设备的用户脚本的运行状态。只有设备脚本文件存在时，才能设置此字段。
 :end
 
 :ud_edit_script_run_background_plug:
-> Set to **Yes** to have the Device Script run as a background task. This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
+> 设为**是**，让设备脚本作为后台任务运行，避免从界面运行脚本时导致 Unassigned Devices 界面卡住。
 :end
 
 :ud_edit_script_buttons_plug:
-> Click **Default** to initialize the edit box with a default Device Script. You still need to click **Save** in order to commit the change.
+> 点击**默认**，将默认设备脚本填入编辑框；仍需点击**保存**才能保存更改。
 >
-> Click **Save** to save your Device Script file.
+> 点击**保存**保存设备脚本文件。
 >
-> Click **Delete** to delete the Device Script file.
+> 点击**删除**删除设备脚本文件。
 >
-> Click **Reset** to undo any changes you make (before Saving).
+> 点击**重置**撤销尚未保存的更改。
 >
-> Click **Apply** to commit the current edits.
+> 点击**应用**提交当前编辑内容。
 >
-> Click **Done** to exit this page.
+> 点击**完成**退出此页面。
 :end

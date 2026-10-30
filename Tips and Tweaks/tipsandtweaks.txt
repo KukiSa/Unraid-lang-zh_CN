@@ -1,229 +1,223 @@
-After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=
-Check the=
-Available User Watches=
-Click on Help for more information=
-Correct any problems that are identified before doing any tweaking=
-Current Disk Cache Settings=
-Current Inotify Settings=
-Current NIC settings=
-Current User Watches=
-Disable NIC Flow Control=
-Disable NIC Offload=
-Disk Cache=
-Dont change the Disk Cache settings until you read and understand this=Don’t change the Disk Cache settings until you read and understand this
-Driver=
-Enable Intel TurboAMD Performance Boost=Enable Intel Turbo/AMD Performance Boost
-Enable syslog Archiving=
-Ethernet NIC Rx Buffer=
-Ethernet NIC Tx Buffer=
-Ethernet NICS=
-Flow Control=
-for additional ideas on improving your Unraid performance and solving problems=
-for information on the issue=
-Go to Settings->Syslog Server and enable the Syslog Server=Go to 'Settings → Syslog Server' and enable the Syslog Server.
-Governor=
-Guide=
-If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=
-If you configure VLANs on Unraid, you should make Unraid the Master Browser=
-If you dont Unraid may not detect the Master Browser for all network interfaces correctly=If you don’t, Unraid may not detect the Master Browser for all network interfaces correctly
-If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=
-If you set the Power Save CPU Governor, you may see your processors stuck at 800 MHz=If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz.
-Install the Fix Common Problems plugin and resolve any Unraid configuration problems=
-Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
-It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=
-It is recommended to use the pstate driver on Intel processors if you want the most performance=
-It is recommended you use the 'Performance' Governor for best performance and power savings=
-Make changes slowly=
-Make one change at a time and verify if it improves your situation=
-Making changes here can briefly interrupt your network operation=
-Many plugins are no longer compatible with older Unraid versions=
-Max SMB Open Files=
-Max User Instances=
-Max User Watches=
-NIC Offload=
-NIC Rx Buffer=
-NIC Tx Buffer=
-Normal CPU Scaling Governor=
-Note=
-Number of syslogs to Archive=
-post=
-Power Saving Settings=
-Power Saving CPU Scaling Governor=
-Processes to kill before Array is Stopped=
-Put the IP address of your server in the Remote syslog server field=
-Read this=
-Schedule CPU Power Saving Mode=
-Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=Some users have reported better VM performance, especially for media streaming and gaming VMs, when applying the suggestions here.
-Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=
-Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=
-Some people are reporting OOM out of memory errors=
-Support for older versions of Unraid is being phased out=
-The dashboard shows CPU loading and not CPU frequency=
-The feature is not available on any of your NICs=
-The first thing you should do is to install the Fix Common Problems plugin to find and fix common problems=
-The Tips below are suggestions, workarounds for known problems, and potential fixes=
-There is a very cool feature in Unraid 6 and up that can be used to capture your logs and help in troubleshooting a situation where your server locks up or becomes unresponsive=
-This will identify potential problems to be solved before you upgrade the Unraid OS=
-This will log all your server log enries to the Syslog Server and save the log to an array share=
-This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=
-Time to set Normal CPU Scaling=
-Time to set Power Saving CPU Scaling=
-Time to set TurboPerformance Boost Off=Time to set Turbo/Performance Boost Off
-Time to set TurboPerformance Boost On=Time to set Turbo/Performance Boost On
-Tips=
-Tips and Tweaks wiki=
-Tweaks=
-Use the Update Assistant that is part of the Fix Common Problems plugin=
-Version 6.11.4 and later=
-You can check CPU frequencies on the command line with=
-You may actually cause more problems than you solve if there are problems with your Unraid configuration=
+After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=服务器死机或无响应后重启，可以通过系统日志查看器查看已保存的日志
+Check the=检查
+Available User Watches=可用的用户监视项
+Click on Help for more information=点击帮助了解详情
+Correct any problems that are identified before doing any tweaking=调整参数前，请先解决已发现的问题
+Current Disk Cache Settings=当前磁盘缓存设置
+Current Inotify Settings=当前 Inotify 设置
+Current NIC settings=当前网卡设置
+Current User Watches=当前用户监视项
+Disable NIC Flow Control=禁用网卡流量控制
+Disable NIC Offload=禁用网卡卸载功能
+Disk Cache=磁盘缓存
+Dont change the Disk Cache settings until you read and understand this=在阅读并理解以下内容前，请勿更改磁盘缓存设置
+Driver=驱动程序
+Enable Intel TurboAMD Performance Boost=启用 Intel 睿频 / AMD 性能加速
+Enable syslog Archiving=启用系统日志归档
+Ethernet NIC Rx Buffer=以太网卡接收缓冲区
+Ethernet NIC Tx Buffer=以太网卡发送缓冲区
+Ethernet NICS=以太网卡
+Flow Control=流量控制
+for additional ideas on improving your Unraid performance and solving problems=了解更多提升 Unraid 性能和解决问题的方法
+for information on the issue=了解此问题的相关信息
+Go to Settings->Syslog Server and enable the Syslog Server=前往「设置 → 系统日志服务器」并启用系统日志服务器。
+Governor=调速策略
+Guide=指南
+If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=如果出现内存不足 (OOM) 错误，请尝试调整「调优」页面中的磁盘缓存设置
+If you configure VLANs on Unraid, you should make Unraid the Master Browser=如果在 Unraid 上配置了 VLAN，应将 Unraid 设为主浏览器
+If you dont Unraid may not detect the Master Browser for all network interfaces correctly=否则，Unraid 可能无法正确检测所有网络接口上的主浏览器
+If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=如果使用 Intel 处理器，可能会看到所有 CPU 始终以最高频率运行
+If you set the Power Save CPU Governor, you may see your processors stuck at 800 MHz=如果选择「节能 (Power Save)」CPU 调速策略，处理器可能一直运行在 800 MHz。
+Install the Fix Common Problems plugin and resolve any Unraid configuration problems=安装 Fix Common Problems 插件，并解决 Unraid 配置问题
+Intel TurboAMD Performance Boost=Intel 睿频 / AMD 性能加速
+It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=建议将 Unraid 更新至最新稳定版，以获取最新功能、缺陷修复和安全更新
+It is recommended to use the pstate driver on Intel processors if you want the most performance=如果使用 Intel 处理器并追求最高性能，建议使用 pstate 驱动
+It is recommended you use the 'Performance' Governor for best performance and power savings=为兼顾性能和节能，建议使用「性能 (Performance)」调速策略
+Make changes slowly=逐步更改设置
+Make one change at a time and verify if it improves your situation=每次只更改一项，并验证是否有所改善
+Making changes here can briefly interrupt your network operation=在此更改设置可能会短暂中断网络
+Many plugins are no longer compatible with older Unraid versions=许多插件已不再兼容旧版 Unraid
+Max SMB Open Files=SMB 打开文件数上限
+Max User Instances=用户实例数上限
+Max User Watches=用户监视项上限
+NIC Offload=网卡卸载功能
+NIC Rx Buffer=网卡接收缓冲区
+NIC Tx Buffer=网卡发送缓冲区
+Normal CPU Scaling Governor=常规 CPU 调速策略
+Note=注意
+Number of syslogs to Archive=系统日志归档数量
+post=帖子
+Power Saving Settings=节能设置
+Power Saving CPU Scaling Governor=节能 CPU 调速策略
+Processes to kill before Array is Stopped=停止阵列 (Array) 前要终止的进程
+Put the IP address of your server in the Remote syslog server field=在「远程系统日志服务器」字段中输入本机服务器的 IP 地址
+Read this=阅读此
+Schedule CPU Power Saving Mode=按计划切换 CPU 节能模式
+Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=部分用户反馈，采用此处建议后虚拟机性能有所改善，尤其是媒体流和游戏虚拟机。
+Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=部分用户反馈，调整此插件「调优」选项卡中的网络参数后，网络性能更快、更稳定
+Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=部分设置会消耗内存，最终可能导致 Linux 终止某些进程以释放内存
+Some people are reporting OOM out of memory errors=有用户反馈出现内存不足 (OOM) 错误
+Support for older versions of Unraid is being phased out=对旧版 Unraid 的支持正逐步停止
+The dashboard shows CPU loading and not CPU frequency=仪表板显示的是 CPU 负载，而非 CPU 频率
+The feature is not available on any of your NICs=你的所有网卡均不支持此功能
+The first thing you should do is to install the Fix Common Problems plugin to find and fix common problems=首先应安装 Fix Common Problems 插件，查找并修复常见问题
+The Tips below are suggestions, workarounds for known problems, and potential fixes=以下技巧包括建议、已知问题的绕过方法以及可能的修复办法
+There is a very cool feature in Unraid 6 and up that can be used to capture your logs and help in troubleshooting a situation where your server locks up or becomes unresponsive=Unraid 6 及更高版本提供日志收集功能，可帮助排查服务器死机或无响应的问题
+This will identify potential problems to be solved before you upgrade the Unraid OS=此工具可找出升级 Unraid OS 前需要解决的潜在问题
+This will log all your server log enries to the Syslog Server and save the log to an array share=这会将服务器的全部日志发送至系统日志服务器，并保存到阵列 (Array) 上的共享中
+This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=随着 Unraid 安装的内存越来越大，加上默认磁盘缓存设置过高，此问题似乎更常发生
+Time to set Normal CPU Scaling=切换到常规 CPU 调速策略的时间
+Time to set Power Saving CPU Scaling=切换到节能 CPU 调速策略的时间
+Time to set TurboPerformance Boost Off=关闭睿频 / 性能加速的时间
+Time to set TurboPerformance Boost On=开启睿频 / 性能加速的时间
+Tips=技巧
+Tips and Tweaks wiki=Tips and Tweaks 维基
+Tweaks=调优
+Use the Update Assistant that is part of the Fix Common Problems plugin=使用 Fix Common Problems 插件中的更新助手
+Version 6.11.4 and later=6.11.4 及更高版本
+You can check CPU frequencies on the command line with=可以在命令行中使用以下命令查看 CPU 频率
+You may actually cause more problems than you solve if there are problems with your Unraid configuration=如果 Unraid 配置本身存在问题，调整参数可能带来更多问题
 
 ;
 ; Help
 ;
 :tips_tweaks_general_plug:
-> Some General Recommendations:
+> 一般建议：
 >
-> + Use of a static IP address can help in certain cases. NFS shares are referenced by IP address. Be sure you reserve the IP address on your router, or set a very high IP address to prevent conflicts.
-> + Use of Jumbo Frames is discouraged.  Jumbo Frames have been known to cause issues with some Dockers.
-> + Don’t set 'vm.dirty_ratio' above 20% unless your Unraid server is on a UPS. You may lose data that has not been written to disk during a power failure.
-> + A value of 'vm.dirty_background_ratio' over 1/2 of 'vm.dirty_ratio' is not recommended unless using single digits for both values.
+> + 某些情况下使用静态 IP 地址会有所帮助。NFS 共享通过 IP 地址引用，请在路由器中保留该地址，或选择地址段中较高的地址以避免冲突。
+> + 不建议使用巨帧 (Jumbo Frames)，已知它可能导致某些 Docker 容器出现问题。
+> + 除非 Unraid 服务器配有 UPS，否则不要将 vm.dirty_ratio 设为超过 20%。停电时，尚未写入磁盘的数据可能丢失。
+> + 除非两个值都小于 10，否则不建议将 vm.dirty_background_ratio 设为超过 vm.dirty_ratio 的一半。
 :end
 
 :tips_tweaks_nic_flow_control_plug:
-> Set to 'Yes' to disable NIC Flow Control.  NIC Flow Control was originally implemented to help in
-> networks with mixed speed devices. It no longer seems necessary on today’s networks. If you
-> have a managed switch, flow control can generally be turned on and off on the switch. If you have
-> a consumer grade switch, you won’t have that level of control. Flow Control has been known to create
-> network issues in certain circumstances. It is recommended to disable Flow Control if you experience network issues.
+> 设为「是」可禁用网卡流量控制 (Flow Control)。此功能最初用于混合速率设备的网络，在现代网络中未必仍有必要。
+> 网管交换机通常可以自行开关流量控制，消费级交换机一般没有这种控制能力。
+> 某些情况下流量控制会导致网络问题。如果遇到网络异常，插件建议尝试禁用。
 >
-> Changing from any setting to 'Default' requires a reboot.
+> 从其他设置切换回「默认」需要重启。
 :end
 
 :tips_tweaks_nic_offload_plug:
-> Set to 'Yes' to disable NIC offloads. Offloads were developed to offload some network processing
-> to the NIC and off the main CPU and deal with large packets. This was intended to save some CPU processing
-> load and increase network throughput. TSO offload has been known to cause network issues in certain circumstances.
-> It is recommended to disable NIC Offloads if you experience network issues.
+> 设为「是」可禁用网卡卸载 (Offload)。此功能将部分网络处理及大数据包处理从主 CPU 转交网卡，以降低 CPU 负载并提高吞吐量。
+> 某些情况下，TSO 卸载会导致网络问题。如果遇到网络异常，插件建议尝试禁用网卡卸载。
 >
-> Changing from any setting to 'Default' requires a reboot.
+> 从其他设置切换回「默认」需要重启。
 :end
 
 :tips_tweaks_rx_buffer_plug:
-> Select the size of the NIC Rx ring buffer. Some NICs have a limit on the size of the Rx ring buffer. The default value of '256' is recommended.
+> 选择网卡接收环形缓冲区 (Rx Ring Buffer) 大小。部分网卡对此大小有限制，建议使用默认值 256。
 >
-> Changing from any setting to 'Default' requires a reboot.
+> 从其他设置切换回「默认」需要重启。
 :end
 
 :tips_tweaks_tx_buffer_plug:
-> Select the size of the NIC Tx ring buffer. Some NICs have a limit on the size of the Tx ring buffer. The default value of '256' is recommended.
+> 选择网卡发送环形缓冲区 (Tx Ring Buffer) 大小。部分网卡对此大小有限制，建议使用默认值 256。
 >
-> Changing from any setting to 'Default' requires a reboot.
+> 从其他设置切换回「默认」需要重启。
 :end
 
 :tips_tweaks_nics_plug:
-> List the NICs to apply the above settings separated by commas. If you have multiple NICs that are bonded, be sure to include all of them. Flow Control, TSO, and NIC buffer settings will
-> be applied to these NICs.
+> 以逗号分隔需要应用上述设置的网卡。若多个网卡组成链路聚合 (Bonding)，请包含所有成员。流量控制、TSO 和网卡缓冲区设置将应用于这些网卡。
 :end
 
 :tips_tweaks_dirty_background_plug:
-> Recommended values are: 'vm.dirty_background_ratio' to 3% and 'vm.dirty_ratio' to 5%.
-> If you have a large amount of RAM, set the 'vm.dirty_background_ratio' to 1% and 'vm.dirty_ratio' to 2%.
-> Caution: Don’t increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
+> 插件建议将 vm.dirty_background_ratio 设为 3%，vm.dirty_ratio 设为 5%。
+> 内存较大时，可分别设为 1% 和 2%。
+> 注意：除非 UPS 能可靠地关闭 Unraid，否则不要将这些值增大至超过默认设置。
 >
-> Set the 'vm.dirty_background_ratio' as a percentage of total RAM.
-> The default setting of 3% is recommended unless you have a large amounts of RAM. If you run media‑streaming or gaming VMs, use a value of 1%.
+> vm.dirty_background_ratio 是占总内存的百分比。除非内存很大，否则建议保留 3%。运行媒体流或游戏虚拟机时，可使用 1%。
 :end
 
 :tips_tweaks_dirty_ratio_plug:
-> Set the 'vm.dirty_ratio' as a percentage of total RAM.
-> Setting this too high may cause Linux to terminate some processes to gain more memory. The default setting of 5% is recommended unless you have a large amount of RAM.
+> vm.dirty_ratio 是占总内存的百分比。
+> 设得过高可能导致 Linux 终止某些进程以释放内存。除非内存很大，否则建议使用默认值 5%。
 :end
 
 :tips_tweaks_writeback_plug:
-> The default is '200 centiseconds' (2 seconds) to control how often the kernel checks for dirty data to flush in the background.
+> 默认为 200 厘秒（2 秒），控制内核在后台检查待回写脏数据的频率。
 :end
 
 :tips_tweaks_expire_plug:
-> The default is '1000 centiseconds' (10 seconds) to specify how long data can stay dirty before it is considered for write-back.
+> 默认为 1000 厘秒（10 秒），指定脏数据保留多久后进入可回写范围。
 :end
 
 :tips_tweaks_max_watches_plug:
-> If inotify fails to start because there are not enough user watches, increase the max_user_watches.
+> 如果 inotify 因用户监视项不足而无法启动，请增大 max_user_watches。
 >
-> The default is 524288.
+> 默认值为 524288。
 :end
 
 :tips_tweaks_max_instances_plug:
-> This is maximum number of inotify instances that a user can create.
+> 设置单个用户最多可创建的 inotify 实例数。
 >
-> The default is 128.
+> 默认值为 128。
 :end
 
 :tips_tweaks_max_files_plug:
-> This value is used by SAMBA to set the maximum number of open files allowed in SMB shares.
+> SAMBA 使用此值限制 SMB 共享中允许同时打开的文件数量。
 >
-> The default is '40960' and the allowed range is '40960 to 65535'.
+> 默认值为 40960，允许范围为 40960 至 65535。
 :end
 
 :tips_tweak_turbo_plug:
-> Set to 'Yes' to enable the Intel Turbo or AMD Performance Boost Mode. Set 'No' to disable. Set to 'Schedule' to enable Turbo/AMD Performance Boost mode on/off based on the times set below.
+> 设为「是」启用 Intel 睿频或 AMD 性能加速，设为「否」禁用。设为「计划」，则根据下方时间自动开启或关闭。
 :end
 
 :tips_tweaks_turbo_state_off_plug:
-> Enter the time you want to set Intel Turbo/AMD Performance Boost Off in 24 hour format hh:mm.
+> 输入关闭 Intel 睿频 / AMD 性能加速的时间，使用 24 小时制 hh:mm 格式。
 :end
 
 :tips_tweaks_turbo_state_on_plug:
-> Enter the time you want to set Intel Turbo/AMD Performance Boost On in 24 hour format hh:mm.
+> 输入开启 Intel 睿频 / AMD 性能加速的时间，使用 24 小时制 hh:mm 格式。
 :end
 
 :tips_tweaks_cpu_governor_plug:
-> Select the Normal CPU Scaling Governor you want to use.
+> 选择常规运行时使用的 CPU 调速策略 (Governor)。
 >
-> + **Power Save** - Locks CPUs to the lowest frequency for maximum power savings.
-> + **On Demand** - Default for the ACPI CPUFreq driver. Scales CPU frequency based on load; frequency changes are aggressive.
-> + **Conservative** - Scales CPU frequency based on load; gentler frequency changes; may introduce latency.
-> + **Performance** - Locks CPUs to the highest frequency regardless of load; can improve performance and latency.
-> + **Schedutil** - Uses the Linux scheduler to scale CPU frequency based on load.
+> + **节能 (Power Save)**：将 CPU 固定在最低频率，最大限度节能。
+> + **按需 (On Demand)**：ACPI CPUFreq 驱动的默认策略，根据负载调整频率，变化较积极。
+> + **保守 (Conservative)**：根据负载平缓调整频率，可能增加延迟。
+> + **性能 (Performance)**：无论负载如何，都将 CPU 固定在最高频率，可改善性能和延迟。
+> + **Schedutil**：由 Linux 调度器根据负载调整 CPU 频率。
 >
-> You can now set the CPU governor with the 'rc.tweaks' script. Use the command:
+> 也可以使用 rc.tweaks 脚本设置策略，命令为：
 > /usr/local/sbin/rc.tweaks set_governor 'governor'
-> The 'governor' choices are: 'ondemand', 'performance', 'powersave', 'conservative', and 'schedutil'.
+> governor 可选值为：'ondemand'、'performance'、'powersave'、'conservative' 和 'schedutil'。
 :end
 
 :tips_tweaks_power_save_cpu_governor_plug:
-> Select the Power Saving CPU Scaling Governor you want to use.
+> 选择节能时使用的 CPU 调速策略 (Governor)。
 >
-> + **Power Save** - Locks CPUs to the lowest frequency for maximum power savings.
-> + **On Demand** - Default for the ACPI CPUFreq driver. Scales CPU frequency based on load; frequency changes are aggressive.
-> + **Conservative** - Scales CPU frequency based on load; gentler frequency changes; may introduce latency.
-> + **Schedutil** - Uses the Linux scheduler to scale CPU frequency based on load.
+> + **节能 (Power Save)**：将 CPU 固定在最低频率，最大限度节能。
+> + **按需 (On Demand)**：ACPI CPUFreq 驱动的默认策略，根据负载调整频率，变化较积极。
+> + **保守 (Conservative)**：根据负载平缓调整频率，可能增加延迟。
+> + **Schedutil**：由 Linux 调度器根据负载调整 CPU 频率。
 :end
 
 :tips_tweaks_scheduled_plug:
-> Set to 'Yes' to enable scheduled CPU Power Saving mode based on the times set below for Normal and Power Saving modes.
+> 设为「是」，按下方指定时间在常规和节能 CPU 模式之间切换。
 :end
 
 :tips_tweaks_cpu_state_plug:
-> Enter the time you want to set the governor to selected Power Saving mode in 24 hour format hh:mm.
+> 输入切换至所选节能调速策略的时间，使用 24 小时制 hh:mm 格式。
 :end
 
 :tips_tweaks_performance_plug:
-> Enter the time you want to set the governor to Normal CPU Scaling Governor in 24 hour format hh:mm.
+> 输入切换至常规 CPU 调速策略的时间，使用 24 小时制 hh:mm 格式。
 :end
 
 :tips_tweaks_syslog_archive_plug:
-> Set to 'Yes' to enable the capture and archive of syslogs and run a diagnostics on shutdown. Logs and diagnostics are saved to '/boot/logs/'.
+> 设为「是」，启用系统日志收集与归档，并在关机时运行诊断。日志和诊断保存到 '/boot/logs/'。
 :end
 
 :tips_tweaks_number_syslogs_plug:
-> Set the number of syslogs to save in the archive.
-> Set '0' to save only last syslog. Set to '-1' to save all logs. Default setting is '10'.
+> 设置归档保留的系统日志数量。
+> 0 表示仅保留最近一次日志，-1 表示保留所有日志，默认值为 10。
 :end
 
 :tips_tweaks_kill_processes_plug:
-> Enter the names of processes to kill before stopping the array, separated by commas. For example, 'ssh' and 'bash'. These processes can keep the array disks from unmounting causing Unraid to hang when the array is being stopped.
+> 输入停止阵列 (Array) 前要终止的进程名称，以逗号分隔，例如 ssh 和 bash。这些进程可能阻止阵列磁盘卸载，使 Unraid 在停止阵列时卡住。
 >
-> Note: Be careful with the processes you kill here. You could lose data!
+> 注意：请谨慎选择要终止的进程，否则可能丢失数据！
 :end

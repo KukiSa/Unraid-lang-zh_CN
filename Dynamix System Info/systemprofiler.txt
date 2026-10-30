@@ -1,5 +1,5 @@
-Not available=
-P + Q algorithm=
-System Overview=
-Unraid server=
-Unraid system=
+Not available=不可用
+P + Q algorithm=P + Q 算法
+System Overview=系统概览
+Unraid server=Unraid 服务器
+Unraid system=Unraid 系统

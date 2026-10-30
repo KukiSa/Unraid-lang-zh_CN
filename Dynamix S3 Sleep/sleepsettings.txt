@@ -1,117 +1,117 @@
-Console=
-Counters only=
-Custom commands after wake-up=
-Custom commands before sleep=
-Device activity monitoring=
-DHCP renewal after wake-up=
-Enable DEBUG mode=
-Enter custom commands here=
-Ethernet interface=
-Excluded days=
-Excluded hours=
-Execute function=
-Extra delay after array inactivity=
-Force gigabit speed after wake-up=
-High traffic=
-IP address=
-Local Remote=Local & Remote
-Local=
-Log will be stored in bootlogss3_sleeplog=Log will be stored in **/boot/logs/s3_sleep.log**
-Low traffic=
-Medium traffic=
-Mega traffic=
-Monitor disks outside array=
-Network idle threshold=
-no host=
-Remote=
-Set WOL options before sleep=
-Silent traffic=
-Status counters=Status & counters
-Status only=
-Syslog and flash=
-Syslog=
-Wait for array inactivity=
-Wait for host inactivity=
-Wait for network inactivity=
-Wait for user login inactivity=
-Yes, exclude Cache=
+Console=控制台
+Counters only=仅计数器
+Custom commands after wake-up=唤醒后执行的自定义命令
+Custom commands before sleep=休眠前执行的自定义命令
+Device activity monitoring=监控设备活动
+DHCP renewal after wake-up=唤醒后续租 DHCP 地址
+Enable DEBUG mode=启用调试模式
+Enter custom commands here=在此输入自定义命令
+Ethernet interface=以太网接口
+Excluded days=排除的日期
+Excluded hours=排除的时段
+Execute function=执行操作
+Extra delay after array inactivity=阵列 (Array) 停止活动后的额外延迟
+Force gigabit speed after wake-up=唤醒后强制设置为千兆速率
+High traffic=高流量
+IP address=IP 地址
+Local Remote=本地和远程
+Local=本地
+Log will be stored in bootlogss3_sleeplog=日志将保存到 **/boot/logs/s3_sleep.log**
+Low traffic=低流量
+Medium traffic=中等流量
+Mega traffic=极高流量
+Monitor disks outside array=监控阵列 (Array) 外的磁盘
+Network idle threshold=网络空闲阈值
+no host=无主机
+Remote=远程
+Set WOL options before sleep=休眠前设置网络唤醒选项
+Silent traffic=极低流量
+Status counters=状态和计数器
+Status only=仅状态
+Syslog and flash=系统日志和启动闪存盘
+Syslog=系统日志
+Wait for array inactivity=等待阵列 (Array) 空闲
+Wait for host inactivity=等待主机空闲
+Wait for network inactivity=等待网络空闲
+Wait for user login inactivity=等待无用户登录活动
+Yes, exclude Cache=是，排除缓存
 
 :s3sleep_function_plug:
-> Select the mode of operation. The system can be either put to sleep (and wake-up) or completely shutdown.
+> 选择运行模式：使系统休眠（之后可唤醒），或完全关机。
 >
-> The next settings determine the conditions under which the system will be put to sleep or shutdown.
+> 后续设置决定系统在什么条件下休眠或关机。
 :end
 
 :s3sleep_excluded_days_plug:
-> By default all days are included, select here the days that sleep or shutdown is not effective. This setting works in combination with excluded hours.
+> 默认包含所有日期。在此选择不执行休眠或关机的日期，此设置与排除的时段共同生效。
 :end
 
 :s3sleep_excluded_hours_plug:
-> By default all hours are included, select here the hours that sleep or shutdown is not effective. This setting works in combination with excluded days.
+> 默认包含所有时段。在此选择不执行休眠或关机的时段，此设置与排除的日期共同生效。
 :end
 
 :s3sleep_inactivity_plug:
-> Select whether the array must be completely inactive (all disks are spun down) before sleep or shutdown can take place.
+> 选择是否必须等阵列 (Array) 完全空闲（所有磁盘均已停转）后，才能休眠或关机。
 >
-> The Cache disk can be included or excluded in this setting, e.g. when the Cache disk is used continuously and never spins down.
+> 此条件可以包含或排除缓存磁盘。例如，持续使用且从不停转的缓存磁盘可以排除。
 :end
 
 :s3sleep_activity_plug:
-> *Status* monitors the hardware status of the device
+> *状态*：监控设备的硬件状态。
 >
-> *Counters* monitors the read/write counters of the device
+> *计数器*：监控设备的读写计数器。
 :end
 
 :s3sleep_outside_plug:
-> If there any other disks present outside the array, then these can be monitored separately.
+> 如果存在阵列 (Array) 外的其他磁盘，可以单独监控。
 :end
 
 :s3sleep_extra_delay_plug:
-> Specify an additional delay after the array has become inactive. Value may be 0 for no delay.
+> 指定阵列 (Array) 进入空闲状态后的额外等待时间。设为 0 表示不额外延迟。
 :end
 
 :s3sleep_network_plug:
-> Select whether network activity must be taken as a condition before going to sleep or shutdown.
+> 选择是否将网络活动作为允许休眠或关机的判断条件。
 :end
 
 :s3sleep_ethernet_plug:
-> In case of multiple network interfaces, select here the interface to use for checking the network activity.
+> 存在多个网络接口时，在此选择用于检查网络活动的接口。
 :end
 
 :s3sleep_idle_plug:
-> Network activity is evaluated against thresholds, from Silent to Mega traffic. Experiment to find the right balance for your environment.
+> 根据从极低到极高流量的阈值判断网络活动。请尝试不同设置，找到适合当前环境的阈值。
 :end
 
 :s3sleep_host_plug:
-> Select whether external hosts need to be monitored and non-responding as a sleep or shutdown condition.
+> 选择是否监控外部主机，并将其无响应作为休眠或关机的条件。
 >
-> Specify external hosts by IP address; separate multiple IPs with commas. If any host responds to ping, sleep or shutdown will not occur.
+> 以 IP 地址指定外部主机，多个地址以逗号分隔。只要有任一主机响应 ping，就不会休眠或关机。
 :end
 
 :s3sleep_login_plug:
-> Select whether local (console) or remote (telnet or ssh) logged in users need to log out first before sleep or shutdown can proceed.
+> 选择是否需要本地（控制台）或远程（Telnet 或 SSH）登录的用户全部退出后，才允许休眠或关机。
 :end
 
 :s3sleep_wol_plug:
-> Set additional WOL options for proper support of S3 sleep. Refer to your system documentation for possibilities.
+> 设置额外的网络唤醒 (WOL) 选项，以正确支持 S3 休眠。可用选项请参阅硬件文档。
 :end
 
 :s3sleep_before_plug:
-> Enter additional commands to run before sleep or shutdown here (e.g., cleanup or other tasks).
+> 在此输入休眠或关机前执行的额外命令，例如清理或其他任务。
 :end
 
 :s3sleep_after_plug:
-> Enter additional commands to run after wake-up here. This can help restore the previous state.
+> 在此输入唤醒后执行的额外命令，可用于恢复休眠前的状态。
 :end
 
 :s3sleep_gigabit_plug:
-> Leave this OFF by default. If the interface doesn’t start properly after wake-up, try enabling this setting.
+> 默认应关闭。如果唤醒后网络接口无法正常工作，可尝试启用。
 :end
 
 :s3sleep_dhcp_plug:
-> Leave this OFF by default. If the system doesn’t start properly after wake-up, try enabling this setting.
+> 默认应关闭。如果唤醒后系统无法正常工作，可尝试启用。
 :end
 
 :s3sleep_debug_plug:
-> By default debug is OFF. Use this setting only in case of troubleshooting, it will generate additional messages to report the various stages within the s3_sleep script.
+> 默认关闭调试。仅在故障排查时启用，s3_sleep 脚本会输出更多消息，报告各个执行阶段。
 :end

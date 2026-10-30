@@ -1,355 +1,335 @@
-A registration replacement key has been created for USB Flash GUID=
-About=
-Alert Message=
-alert=
-Alerts=
-All Categories=
-An email has been sent to=
-and=
-Anonymize diagnostics=
-Anytime=
-Archived Notifications=
-Are you sure=
-Array has been Reset=Array has been **Reset**
-Array must be Started to change permissions=Array must be **Started** to change permissions
-Array must be Stopped to change=Array must be **Stopped** to change
-Array slots=
-Array=
-Author=
-Beta=
-Blacklisted USB Flash GUID=
-Branch=
-By using this software, you agree with our=
-Cache slots=
-Cannot connect to key-server=
-Check for Updates=
-Clear Log=
-click Install Key=click <i>Install Key</i>
-collecting diagnostic information this may take several minutes=collecting diagnostic information (this may take several minutes)
-Component=
-Creating Flash backup=
-Creation error=
-Credits=
-Data slots=
-Delete all notifications=
-Delete Modprobe config=Delete 'Modprobe.d' config
-Delete notification=
-Deprecated Only=
-Developer=
-Diagnostics=
-Disks=
-Display Settings=
-Downgrade OS=
-Downloading=
-Driver=
-Edit Modprobe config=Edit 'Modprobe.d' config
-End-User License Agreement=
-Enter URL of language pack XML file=
-Error accessing your physical USB Flash boot device=
-Error reporting level=
-Errors Only=
-EULA=
-Event=
-Expiration=
-Extend=
-extended=
-Flash backup=
-Get Trial Key=
-Hardware Profile=
-Hide Details=
-If you do not receive an email, please check your spam or junk-email folder=
-Importance=
-Important=
-Install Language=
-Install=
-Installed languages=
-Insufficient free disk space available=
-Invalid Trial Installation=Invalid *Trial* Installation
-It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=
-Key file URL=
-Language support added=
-Language support deleted=
-Language=
-Log file cleared=
-Log size=
-LOG size=
-Log Viewer new=Log Viewer (new)
-Missing Key File=
-Missing Language=
-Modprobed config file='Modprobe.d' config file
-Network Settings=
-New Config=
-New Permissions=
-Next=
-No filter=
-No notifications present=
-No personal information such as user names, passwords, or any other file contents is included in the hardware profile=No personal information such as user names, passwords, or any other file contents is included in the hardware profile
-normal=
-Notices Only=
-Notices=
-Only ZIP files are allowed=
-Page Map=
-Parity slots=
-PHP Info=
-PHP Information=
-PHP Log File=
-PHP Settings=
-Please check your=
-please configure=
-Please provide diagnostics when experiencing problems=
-Please select a language before proceeding=
-Please=
-Pool slots=
-Post these in the forums=
-Preserve current assignments=
-previous=
-Privacy Policy=
-Processes=
-Purchase Key=
-Rebuild Modules=
-Registered GUID=
-Registered on=
-Registered to=
-registering USB Flash GUID=
-Release has been withdrawn=
-Remove custom modprobed configuration=Remove custom 'Modprobe.d' configuration?
-Remove the installed language=
-Replaceable=
-Request Extension=
-Request Trial Extension=
-Restore=
-Save Modprobe config=Save 'Modprobe.d' config
-See=
-Select language file=
-Select language=
-Select View=
-Show Details=
-Show errors on screen=
-slots=
-Stable=
-State=
-Subject=
-Support page=
-System Devices=
-System Drivers=
-System Update Check=
-Text=
-Thank you for choosing Unraid OS=
-Thank you for registering USB Flash GUID=
-Thank you for trying Unraid OS=
-The registered GUID does not match the USB Flash boot device GUID=
-There is a physical problem accessing your USB Flash boot device=
-this may take several minutes=
-This release has been withdrawn for use with Trial keys=This release has been withdrawn for use with *Trial* keys
-This server has %s attached storage device=
-This server has %s attached storage devices=
-This utility is used for troubleshooting purposes=
-This will delete all notification files=
-This will delete the selected notification files=
-This will update folder file permissions=This will update folder & file permissions
-Time=
-To install a registration key, paste the key file URL in the box below and click Install Key=To install a registration key, paste the key file URL in the box below and click **Install Key**
-to select your language=
-Trial key expires on=***Trial*** key expires on
-Trial=
-Update OS=
-Upgrade Key=
-Uploaded=
-uploading hardware information=
-Uploading=
-Use this to develop language packs=
-Use this to install official language packs=
-User Shares=
-User=
-Vars=
-VFIO-PCI Log=
-View Log=
-View VFIO-PCI Log=
-warning=
-Warnings Only=
-Warnings=
-webGUI=
-When received, please paste the URL into the Key file URL box and=When received, please paste the URL into the *Key file URL* box and
-Wrong File Extension=
-You havent sent Limetech your hardware profile yet=You haven't sent Limetech your hardware profile yet
-Your hardware profile was last submitted on=
-Your Trial key has expired=Your *Trial* key has expired
-Your Trial key requires an internet connection=Your *Trial* key requires an internet connection
+A registration replacement key has been created for USB Flash GUID=已为以下 USB 闪存设备 GUID 创建替换许可证密钥
+About=关于
+Alert Message=警报消息
+alert=警报
+Alerts=警报
+All Categories=所有分类
+An email has been sent to=电子邮件已发送至
+and=和
+Anonymize diagnostics=匿名化诊断信息
+Anytime=随时
+Archived Notifications=已归档通知
+Are you sure=是否确定
+Array has been Reset=阵列 (Array) 已**重置**
+Array must be Started to change permissions=必须**启动**阵列 (Array) 才能更改权限
+Array must be Stopped to change=必须**停止**阵列 (Array) 才能更改
+Array slots=阵列 (Array) 槽位
+Array=阵列 (Array)
+Author=作者
+Beta=测试版
+Blacklisted USB Flash GUID=已被封禁的 USB 闪存设备 GUID
+Branch=分支
+By using this software, you agree with our=使用此软件即表示你同意我们的
+Cache slots=缓存槽位
+Cannot connect to key-server=无法连接密钥服务器
+Check for Updates=检查更新
+Clear Log=清空日志
+click Install Key=点击<i>安装密钥</i>
+collecting diagnostic information this may take several minutes=正在收集诊断信息（可能需要几分钟）
+Component=组件
+Creating Flash backup=正在创建启动闪存盘备份
+Creation error=创建错误
+Credits=致谢
+Data slots=数据盘槽位
+Delete all notifications=删除所有通知
+Delete Modprobe config=删除 modprobe.d 配置
+Delete notification=删除通知
+Deprecated Only=仅已弃用项目
+Developer=开发者
+Diagnostics=诊断
+Disks=磁盘
+Display Settings=显示设置
+Downgrade OS=降级操作系统
+Downloading=正在下载
+Driver=驱动程序
+Edit Modprobe config=编辑 modprobe.d 配置
+End-User License Agreement=最终用户许可协议
+Enter URL of language pack XML file=输入语言包 XML 文件的 URL
+Error accessing your physical USB Flash boot device=访问 USB 启动闪存设备时出错
+Error reporting level=错误报告级别
+Errors Only=仅错误
+EULA=最终用户许可协议 (EULA)
+Event=事件
+Expiration=到期时间
+Extend=延长
+extended=已延长
+Flash backup=启动闪存盘备份
+Get Trial Key=获取试用密钥
+Hardware Profile=硬件配置
+Hide Details=隐藏详情
+If you do not receive an email, please check your spam or junk-email folder=如果没有收到电子邮件，请检查垃圾邮件文件夹
+Importance=重要程度
+Important=重要
+Install Language=安装语言
+Install=安装
+Installed languages=已安装语言
+Insufficient free disk space available=磁盘可用空间不足
+Invalid Trial Installation=*试用版*安装无效
+It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=此功能会收集全部系统硬件信息，移除序列号后，通过安全连接上传至 LimeTech
+Key file URL=密钥文件 URL
+Language support added=已添加语言支持
+Language support deleted=已删除语言支持
+Language=语言
+Log file cleared=日志文件已清空
+Log size=日志大小
+LOG size=日志大小
+Log Viewer new=日志查看器（新版）
+Missing Key File=缺少密钥文件
+Missing Language=未选择语言
+Modprobed config file=modprobe.d 配置文件
+Network Settings=网络设置
+New Config=新建配置 (New Config)
+New Permissions=重设权限 (New Permissions)
+Next=下一步
+No filter=不筛选
+No notifications present=没有通知
+No personal information such as user names, passwords, or any other file contents is included in the hardware profile=硬件配置中不包含用户名、密码或任何其他文件内容等个人信息
+normal=正常
+Notices Only=仅提示
+Notices=提示
+Only ZIP files are allowed=仅支持 ZIP 文件
+Page Map=页面导航图
+Parity slots=奇偶校验盘 (Parity Disk) 槽位
+PHP Info=PHP 信息
+PHP Information=PHP 信息
+PHP Log File=PHP 日志文件
+PHP Settings=PHP 设置
+Please check your=请检查你的
+please configure=请配置
+Please provide diagnostics when experiencing problems=遇到问题时请提供诊断信息
+Please select a language before proceeding=请先选择语言再继续
+Please=请
+Pool slots=存储池 (Pool) 槽位
+Post these in the forums=将这些信息发布到论坛
+Preserve current assignments=保留当前设备分配
+previous=上一个
+Privacy Policy=隐私政策
+Processes=进程
+Purchase Key=购买密钥
+Rebuild Modules=重建模块
+Registered GUID=已注册 GUID
+Registered on=注册日期
+Registered to=注册给
+registering USB Flash GUID=正在注册 USB 闪存设备 GUID
+Release has been withdrawn=此版本已撤回
+Remove custom modprobed configuration=是否移除自定义 modprobe.d 配置？
+Remove the installed language=移除已安装的语言
+Replaceable=可更换
+Request Extension=申请延期
+Request Trial Extension=申请试用延期
+Restore=恢复
+Save Modprobe config=保存 modprobe.d 配置
+See=参阅
+Select language file=选择语言文件
+Select language=选择语言
+Select View=选择视图
+Show Details=显示详情
+Show errors on screen=在屏幕上显示错误
+slots=槽位
+Stable=稳定版
+State=状态
+Subject=主题
+Support page=支持页面
+System Devices=系统设备
+System Drivers=系统驱动
+System Update Check=系统更新检查
+Text=文字
+Thank you for choosing Unraid OS=感谢选择 Unraid OS
+Thank you for registering USB Flash GUID=感谢注册以下 USB 闪存设备 GUID
+Thank you for trying Unraid OS=感谢试用 Unraid OS
+The registered GUID does not match the USB Flash boot device GUID=已注册 GUID 与 USB 启动闪存设备的 GUID 不匹配
+There is a physical problem accessing your USB Flash boot device=访问 USB 启动闪存设备时发生硬件问题
+this may take several minutes=可能需要几分钟
+This release has been withdrawn for use with Trial keys=此版本已停止支持*试用*密钥
+This server has %s attached storage device=此服务器连接了 %s 个存储设备
+This server has %s attached storage devices=此服务器连接了 %s 个存储设备
+This utility is used for troubleshooting purposes=此工具用于故障排查
+This will delete all notification files=这将删除所有通知文件
+This will delete the selected notification files=这将删除所选通知文件
+This will update folder file permissions=这将更新文件夹和文件权限
+Time=时间
+To install a registration key, paste the key file URL in the box below and click Install Key=要安装许可证密钥，请将密钥文件 URL 粘贴到下方输入框，并点击**安装密钥**
+to select your language=以选择界面语言
+Trial key expires on=***试用***密钥到期时间
+Trial=试用
+Update OS=更新操作系统
+Upgrade Key=升级密钥
+Uploaded=已上传
+uploading hardware information=正在上传硬件信息
+Uploading=正在上传
+Use this to develop language packs=用于开发语言包
+Use this to install official language packs=用于安装官方语言包
+User Shares=用户共享 (User Share)
+User=用户
+Vars=变量
+VFIO-PCI Log=VFIO-PCI 日志
+View Log=查看日志
+View VFIO-PCI Log=查看 VFIO-PCI 日志
+warning=警告
+Warnings Only=仅警告
+Warnings=警告
+webGUI=WebGUI
+When received, please paste the URL into the Key file URL box and=收到后，请将 URL 粘贴到*密钥文件 URL*输入框，然后
+Wrong File Extension=文件扩展名错误
+You havent sent Limetech your hardware profile yet=你尚未向 Limetech 提交硬件配置
+Your hardware profile was last submitted on=硬件配置上次提交日期
+Your Trial key has expired=*试用*密钥已过期
+Your Trial key requires an internet connection=*试用*密钥需要互联网连接
 
 ; Sysdevs text - added May 18, 2020
-A reboot is required to apply changes=
-ALERT=
-Bind selected to VFIO at Boot=
-CPU Thread Pairings=
-Changes saved=
-Function Level Reset FLR supported=Function Level Reset (FLR) supported
-In use by Unraid=
-Kernel driver in use vfio-pci=Kernel driver in use: vfio-pci
-No changes=
-PCI Devices and IOMMU Groups=
-PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)
-Reboot to take effect=
-SCSI Devices=
-The below list doesnt not reflect the way IOMMU would naturally group devices=The following list does not reflect the way IOMMU would naturally group devices
-This controller is bound to vfio, connected USB devices are not visible=
-This controller is bound to vfio, connected drives are not visible=
-To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=To see natural IOMMU groups for your hardware, go to the [VM Manager] page and set the **PCIe ACS override** setting to **Disabled**.
-USB Devices=
-Your system has booted with the PCIe ACS Override setting enabled=
+A reboot is required to apply changes=更改需要重启后生效
+ALERT=警报
+Bind selected to VFIO at Boot=启动时将所选设备绑定到 VFIO
+CPU Thread Pairings=CPU 线程配对
+Changes saved=更改已保存
+Function Level Reset FLR supported=支持功能级复位 (FLR)
+In use by Unraid=Unraid 正在使用
+Kernel driver in use vfio-pci=当前使用的内核驱动：vfio-pci
+No changes=没有更改
+PCI Devices and IOMMU Groups=PCI 设备和 IOMMU 组
+PCI Devices No IOMMU Groups Available=PCI 设备（无可用 IOMMU 组）
+Reboot to take effect=重启后生效
+SCSI Devices=SCSI 设备
+The below list doesnt not reflect the way IOMMU would naturally group devices=以下列表不反映 IOMMU 对设备的原生分组方式
+This controller is bound to vfio, connected USB devices are not visible=此控制器已绑定到 VFIO，无法显示其连接的 USB 设备
+This controller is bound to vfio, connected drives are not visible=此控制器已绑定到 VFIO，无法显示其连接的驱动器
+To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=要查看硬件的原生 IOMMU 分组，请前往 [VM Manager] 页面，将 **PCIe ACS override** 设为 **Disabled**。
+USB Devices=USB 设备
+Your system has booted with the PCIe ACS Override setting enabled=系统启动时已启用 PCIe ACS Override 设置
 
 :diagnostics_1_plug:
-This utility is used for troubleshooting purposes. It will collect all of the system information and configuration files, and package these files in a single ZIP file which can be saved locally.
-Subsequently, this file can be included in your correspondence with Limetech or the Unraid forum.
+此工具用于故障排查，会收集系统信息和配置文件，打包成一个 ZIP 文件并保存到本地。之后可在联系 Limetech 或到 Unraid 论坛求助时附上。
 
-This will help others to quickly get the inside information of your system and provide better support to your problem. The following information
-and configuration files are collected:
+这有助于他人快速了解系统情况并提供更准确的支持。将收集以下信息和配置：
 :end
 
 :diagnostics_2_plug:
 + */config*
-  <br>copy all *\*.cfg files*, *go* file and the *super.dat* file. These are configuration files.
+  <br>复制全部 *\*.cfg 文件*、*go* 文件和 *super.dat* 文件，即系统配置文件。
 + */config/shares*
-  <br>copy all *\*.cfg* files. These are user share settings files.
-+ *Syslog file(s)*
-  <br>copy the current *syslog* file and any previous existing *syslog* files.
-+ *System*
-  <br>save output of the following commands:
-  <br>lsscsi, lspci, lsusb, free, lsof, ps, ethtool & ifconfig.
-  <br>display of iommu groups.
-  <br>display of command line parameters (e.g. pcie acs override, pci stubbing, etc).
-  <br>save system variables.
-+ *SMART reports*
-  <br>save a SMART report of each individual disk present in your system.
+  <br>复制全部 *\*.cfg* 文件，即用户共享 (User Share) 设置。
++ *系统日志文件*
+  <br>复制当前 *syslog* 以及已有的历史 *syslog*。
++ *系统*
+  <br>保存以下命令输出：
+  <br>lsscsi、lspci、lsusb、free、lsof、ps、ethtool & ifconfig。
+  <br>显示 IOMMU 分组。
+  <br>显示启动命令行参数，例如 PCIe ACS override、PCI 设备预留等。
+  <br>保存系统变量。
++ *SMART 报告*
+  <br>保存系统中每个磁盘的 SMART 报告。
 + *Docker*
-  <br>save files *docker.log*, *libvirtd.log*, *libvirt/qemu/\*.log* and *vfio-pci*.
+  <br>保存 *docker.log*、*libvirtd.log*、*libvirt/qemu/\*.log* 和 *vfio-pci*。
 :end
 
 :diagnostics_3_plug:
-Clicking **Download** will start the collection process and then instruct your browser to save the zip file locally.
+点击**下载**，开始收集，并让浏览器将 ZIP 文件保存到本地。
 
-*No personal information such as user names, passwords, or any other file contents not specified above is included
-by Unraid OS; however, your server name, IP address, and user share names* **will** *be included.*
+*Unraid OS 不会包含用户名、密码或上述范围之外的文件内容等个人信息，但* **会** *包含服务器名称、IP 地址和用户共享 (User Share) 名称。*
 
-*Note that 3rd-party plugins **may** or may not store personal information in plugin-specific configuration files and/or output
-to the system log.*
+*第三方插件**可能**在其配置文件和 / 或系统日志中保存个人信息。*
 
-*Use* **Anonymize diagnostics** *when publishing the diagnostics file in the public forum. In private communication with Limetech it is recommended to uncheck this setting and capture all information unaltered.*
+*在公开论坛发布诊断文件时，请启用* **匿名化诊断信息**。*与 Limetech 私下沟通时，建议取消勾选，以便保留完整原始信息。*
 :end
 
 :newconfig_plug:
-This is a utility to reset the array disk configuration so that all disks appear as "New" disks, as
-if it were a fresh new server.
+此工具重置阵列 (Array) 磁盘配置，使所有磁盘都显示为「新」磁盘，如同全新服务器。
 
-This is useful when you have added or removed multiple drives and wish to rebuild parity based on
-the new configuration.
+适用于同时添加或移除多个驱动器后，按新配置重新构建奇偶校验 (Parity)。
 
-Use the *'Preserve current assignments'* selection to populate the desired disk slots ***after*** the array has been reset. By default **no** disk slots are populated.
+*保留当前设备分配*用于指定阵列重置***之后***要自动填入哪些槽位。默认**不**填入任何槽位。
 
-**DO NOT USE THIS UTILITY THINKING IT WILL REBUILD A FAILED DRIVE** - it will have the opposite
-effect of making it ***impossible*** to rebuild an existing failed drive - you have been warned!
+**不要误以为此工具能重建故障磁盘！** 它会产生相反效果，使现有故障磁盘***无法***重建，请务必注意。
 :end
 
 :newperms_1_plug:
-This is a mandatory one-time action to be taken after upgrading from a pre-5.0 Unraid server release to Unraid v5 or a later release.
-Select **ALL DISKS** when performing this one-time action.
+从 Unraid 5.0 之前的版本升级到 v5 或更高版本后，必须执行一次此操作，并选择**所有磁盘**。
 
-This utility is also useful for restoring default ownership/permissions on files and
-directories when transitioning back from Active Directory to non-Active Directory integration.
+从 Active Directory 切换回非 AD 集成时，也可用此工具恢复文件和目录的默认所有权及权限。
 
-The utility starts a background process that goes to each of your data disks and cache disks and selected user shares
-and changes file and directory ownership to *nobody/users* (i.e., uid/gid to 99/100), and sets permissions
-as follows:
+工具会在后台遍历各数据盘、缓存磁盘及所选用户共享 (User Share)，将所有者改为 *nobody/users*（uid/gid 为 99/100），并设置以下权限：
 :end
 
 :newperms_2_plug:
-For directories:
+目录：
   drwxrwxrwx
 
-For read/write files:
+可读写文件：
   -rw-rw-rw-
 
-For readonly files:
+只读文件：
   -r--r--r--
 :end
 
 :newperms_3_plug:
-Clicking **Start** will open another window and start the background process.
+点击**启动**，会打开新窗口并启动后台进程。
 
-Closing the window before completion will terminate the background process - so don't do that. This process can take a long time if you have many files.
+完成前关闭窗口会终止后台进程，请保持窗口打开。文件较多时可能耗时很长。
 
-Note that this tool may negatively affect any docker containers if you allow your appdata share to be included.
+注意：如果将 appdata 共享纳入处理范围，可能影响 Docker 容器正常工作。
 :end
 
 :registration_1_plug:
-Your server will not be usable until you purchase a Registration key or install a free 30-day *Trial* key. A *Trial*
-key provides all the functionality of a *Pro* Registration key.
+购买许可证密钥或安装 30 天免费*试用*密钥前，服务器无法使用。*试用*密钥具有 *Pro* 许可证密钥的全部功能。
 
-Registration keys are bound to your USB Flash boot device serial number (GUID).  Please use a high quality name brand device
-at least 1GB in size.
+许可证密钥与 USB 启动闪存设备的序列号 (GUID) 绑定。请使用容量至少 1 GB 的优质品牌设备。
 
-Note: USB memory card readers are generally **not** supported because most do not present unique serial numbers.
+注意：USB 读卡器通常**不受支持**，因为大多数无法提供唯一序列号。
 :end
 
 :registration_2_plug:
-+ Please make sure your [server time](DateTime) is accurate to within 5 minutes.
-+ Please make sure there is a [DNS server](NetworkSettings) specified.
++ 请确保[服务器时间](DateTime)误差不超过 5 分钟。
++ 请确保已指定 [DNS 服务器](NetworkSettings)。
 :end
 
 :registration_3_plug:
-Your *Trial* key includes all the functionality and device support of a *Pro* Registration key.
+*试用*密钥包含 *Pro* 许可证密钥的全部功能和设备支持。
 
-After your *Trial* key has reached expiration, your server **still functions normally** until the next time you **Stop** the array.
+试用到期后，服务器**仍正常运行**，直到下次**停止**阵列 (Array)。
 
-At that point, you may either purchase a Registration key, or request a *Trial* extension.
+届时可以购买许可证密钥，或申请*试用*延期。
 :end
 
 :registration_4_plug:
-To continue using Unraid OS you may purchase a Registration key. Alternately, you may request a *Trial* extension key.
+要继续使用 Unraid OS，可购买许可证密钥，也可申请*试用*延期密钥。
 
-Most *Trial* extension requests are processed immediately but please allow up to one business day to receive your *Trial* extension key.
+多数延期请求会立即处理，但请预留最多一个工作日等待收到密钥。
 :end
 
 :registration_5_plug:
-It is not possible to use a *Trial* key with an existing Unraid OS installation.
+现有 Unraid OS 安装不能使用*试用*密钥。
 
-You may purchase a Registration key corresponding to this USB Flash device to continue using this installation.
+可以购买与此 USB 闪存设备对应的许可证密钥，继续使用当前安装。
 
-For more information, please [Contact Support](https://lime-technology.com/contact).
+更多信息请[联系支持](https://lime-technology.com/contact)。
 :end
 
 :registration_6_plug:
-It appears that your Registration key file is corrupted or missing.  The key file should be located in the
-[config](/Registration/Browse?dir&#61;/boot/config) directory on your USB Flash boot device.
+许可证密钥文件似乎已损坏或缺失。应将其保存在 USB 启动闪存盘的 [config](/Registration/Browse?dir&#61;/boot/config) 目录。
 
-If you do not have a backup copy of your Registration key file, [Contact Support](https://lime-technology.com/contact).
+如果没有密钥备份，请[联系支持](https://lime-technology.com/contact)。
 
-If this was a *Trial* installation, you may purchase a Registration key.
+如果原来是*试用*安装，可以购买许可证密钥。
 :end
 
 :registration_7_plug:
-*Trial* installations are only valid with the originally registered USB Flash device.
+*试用*安装仅对最初注册的 USB 闪存设备有效。
 
-To continue using this installation with this USB Flash device, you may purchase a Registration key.
+要继续在此 USB 闪存设备上使用当前安装，可以购买许可证密钥。
 :end
 
 :registration_8_plug:
-The Registration key file does not correspond to the USB Flash boot device.
-Please copy the correct key file to the [config](/Registration/Browse?dir&#61;/boot/config) directory
-on your USB Flash boot device. If you do not have a backup copy of your key file, [Contact Support](https://lime-technology.com/contact).
+许可证密钥文件与 USB 启动闪存设备不匹配。请将正确文件复制到启动闪存盘的 [config](/Registration/Browse?dir&#61;/boot/config) 目录。没有备份时，请[联系支持](https://lime-technology.com/contact)。
 
-If you want to replace your Registration key with a new key bound to this USB Flash device, click Fix Error below. An original key may be
-replaced anytime. Thereafter, a replacement key may be replaced again after one year has passed.  If you require
-another replacement key sooner, [Contact Support](https://lime-technology.com/contact).
+若要更换为绑定当前 USB 闪存设备的新密钥，请点击下方「修复错误」。原始密钥可随时更换；更换后的密钥需满一年才能再次自助更换。若需提前更换，请[联系支持](https://lime-technology.com/contact)。
 
-**Note:** Replacing a Registration key results in permanently *blacklisting* the previous USB Flash GUID.
+**注意**：更换许可证密钥会永久*封禁*旧 USB 闪存设备的 GUID。
 :end
 
 :registration_9_plug:
-This USB Flash boot device has been *blacklisted*. This can occur if you transferred your Registration key to 
-a replacement USB Flash device and are currently booted from your old USB Flash device.
+此 USB 启动闪存设备已被*封禁*。可能是许可证已转移到新的 USB 闪存设备，而当前仍从旧设备启动。
 
-A USB Flash device may also be *blacklisted* if there is no serial number, or if we discover the serial number
-is not unique (this is common with USB card readers).
+USB 设备没有序列号或序列号不唯一时，也可能被*封禁*；USB 读卡器常有这种情况。
 
-For more information, please [Contact Support](https://lime-technology.com/contact).
+更多信息请[联系支持](https://lime-technology.com/contact)。
 :end

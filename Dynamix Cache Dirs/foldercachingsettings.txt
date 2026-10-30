@@ -1,142 +1,138 @@
-Adaptive=
-Cache pressure of directories on system=
-Check HELP for filter example=
-Disk Idle Timer=
-Folder caching function=
-for adaptive depth=
-Important - check HELP if disks spin up=
-Included folders=
-Memory available to the 'cache_dirs' script increase if it dies=Memory available to the 'cache_dirs' script (increase if it crashes)
-Logging=
-Maximum interval between folder scans=
-Maximum level depth=
-Minimum interval between folder scans=
-Minimum level depth=
-or see=
-Run scan of each disk in a separate thread=
-Timeout during disk-idle period=
-Timeout during initial startup or less-idle period=
-Timeout when all directories have been cached=
-Scan user shares mntuser=Scan user shares (/mnt/user)
-Suspend during Mover process=Suspend during 'Mover' process
-unlimited=
-Unraid forum=
-Use Adaptive depth=
-User defined options=
+Adaptive=自适应
+Cache pressure of directories on system=系统目录缓存压力
+Check HELP for filter example=筛选示例请参阅帮助
+Disk Idle Timer=磁盘空闲计时器
+Folder caching function=文件夹缓存功能
+for adaptive depth=用于自适应深度
+Important - check HELP if disks spin up=重要：如果磁盘被唤醒，请查看帮助
+Included folders=包含的文件夹
+Memory available to the 'cache_dirs' script increase if it dies=允许 cache_dirs 脚本使用的内存（如果脚本崩溃，请增大此值）
+Logging=日志记录
+Maximum interval between folder scans=文件夹扫描的最长间隔
+Maximum level depth=最大目录深度
+Minimum interval between folder scans=文件夹扫描的最短间隔
+Minimum level depth=最小目录深度
+or see=或参阅
+Run scan of each disk in a separate thread=使用独立线程扫描每个磁盘
+Timeout during disk-idle period=磁盘空闲期间的超时时间
+Timeout during initial startup or less-idle period=初次启动或磁盘较繁忙时的超时时间
+Timeout when all directories have been cached=所有目录均已缓存时的超时时间
+Scan user shares mntuser=扫描用户共享 (/mnt/user)
+Suspend during Mover process=Mover 运行时暂停
+unlimited=不限
+Unraid forum=Unraid 论坛
+Use Adaptive depth=使用自适应深度
+User defined options=用户自定义选项
 
 :cachedirs_info_plug:
-> Folder Caching Info
+> 文件夹缓存说明
 >
-> The folder caching (cache_dirs) reads directories continuously to keep them in memory.
-> The program does not know whether a directory is already in memory or needs to be re-read from disk.
-> Therefore, it cannot avoid spinning up disks when the Linux memory cache evicts a directory 
-and 'cache_dirs' rescans it.
-> If a large number of files are kept in memory, it is inevitable that some directories will be evicted from the cache when the system is under load.
+> 文件夹缓存程序 cache_dirs 会持续读取目录，使其保留在内存中。
+> 程序无法判断目录是否已在内存中，还是需要从磁盘重新读取。
+> 因此，当 Linux 内存缓存淘汰某个目录，而 cache_dirs 再次扫描它时，无法避免唤醒磁盘。
+> 如果内存中缓存了大量文件，系统负载较高时，部分目录难免会被移出缓存。
 >
-> The program by default uses an adaptive mode where it reduces the depth of the directory structure which it tries to keep in memory.
-> When it detects a cache-miss (slow scan time) it will reduce the depth until disks are idle again,
-> but will still be at risk of putting load on the disks for a minute or two until the program gives up and waits for idle disks.
-> The less files the cache needs to hold, the less likely it is that the program spins up disks.
+> 程序默认使用自适应模式，适当减少尝试保留在内存中的目录层级。
+> 检测到缓存未命中（扫描耗时较长）时，会降低扫描深度，直到磁盘重新空闲。
+> 但在程序放弃扫描并等待磁盘空闲前，仍可能给磁盘带来一两分钟的负载。
+> 需要缓存的文件越少，程序唤醒磁盘的可能性越低。
 :end
 
 :cachedirs_function_plug:
-> Select whether folder caching is enabled or disabled. Caching will only effectively occur when the array is started.
-> The caching function is automatically restarted or stopped when the array goes online or offline.
+> 选择启用或禁用文件夹缓存。只有阵列 (Array) 启动后，缓存功能才会实际生效。
+> 阵列上线或离线时，缓存功能会自动重新启动或停止。
 :end
 
 :cachedirs_pressure_plug:
-> Set 'cache_pressure' to 'NN' (default = 10). A value of 0 means never reclaim cache.
+> 将 cache_pressure 设为指定数值（默认为 10）。0 表示永不回收目录缓存。
 >
-> A value of 1 works great for many users. If your disks spin up or 'cache_dirs' logging indicates it frequently has accessed disks after scan, try lowering 'cache_pressure' to 1. If the system runs out of memory increase 'cache_pressure'.
+> 对许多用户而言，1 是合适的值。如果磁盘被唤醒，或 cache_dirs 日志显示扫描后频繁访问磁盘，可尝试将 cache_pressure 降至 1。如果系统内存不足，则应增大此值。
 >
-> If CPU and disks is heavily affected by 'cache_dirs' on frequent intervals this is also an indication that 'cache_dirs' has to rescan everything.
+> 如果 cache_dirs 频繁明显占用 CPU 和磁盘，也说明它需要重新扫描所有内容。
 >
-> Warning: a value of 0 will cause the kernel to never release directory cache, and if too little memory is available,
-> the system may crash. 'cache_dirs' does not reset 'cache_pressure' after quitting.
-> To reset 'cache_pressure', execute 'sudo sysctl vm.vfs_cache_pressure=100', or run 'cache_dirs' with 'cache_pressure' 100.
+> 警告：设为 0 会使内核永不释放目录缓存，内存不足时可能导致系统崩溃。cache_dirs 退出后不会重置 cache_pressure。
+> 要重置，请执行 'sudo sysctl vm.vfs_cache_pressure=100'，或将 cache_pressure 设为 100 后运行 cache_dirs。
 >
-> See 'vfs_cache_pressure' in [kernel.org](https://www.kernel.org/doc/Documentation/sysctl/vm.txt).
+> 参阅 [kernel.org](https://www.kernel.org/doc/Documentation/sysctl/vm.txt) 中的 vfs_cache_pressure 说明。
 :end
 
 :cachedirs_suspend_plug:
-> Stop caching while the mover is running to avoid conflicts. When using adaptive depth it will probably work well NO.
-> With fixed depth it will almost certainly put less load on the disks to choose YES.
+> Mover 运行时停止缓存，以免冲突。使用自适应深度时，选择「否」通常也能正常工作。
+> 使用固定深度时，选择「是」几乎总能降低磁盘负载。
 :end
 
 :cachedirs_included_folders_plug:
-> The dropdown menu shows all available folders, by default all folders are included. Select here the restricted list of folders to be included.
+> 下拉菜单列出所有可用文件夹。默认包含全部文件夹，可在此指定仅包含哪些文件夹。
 >
-> If an included folder is excluded, then the folder gets excluded. It is simplest to not use includes and excludes at the same time.
+> 如果某个文件夹同时被包含和排除，则以排除为准。最简单的做法是不要同时设置包含和排除列表。
 :end
 
 :cachedirs_excluded_folders_plug:
-> The dropdown menu shows all available folders, by default no folders are excluded. Select here any folders to be excluded.
+> 下拉菜单列出所有可用文件夹，默认不排除任何文件夹。请在此选择要排除的文件夹。
 >
-> It is possible to exclude an included folder. It is simplest to not use includes and excludes at the same time.
+> 已包含的文件夹也可以被排除。最简单的做法是不要同时设置包含和排除列表。
 :end
 
 :cachedirs_adaptive_depth_plug:
-> If adaptive is enabled the depth will be automatically adjusted but will never exceed max level depth.
-> It will start at depth 1 and keep increasing the scan depth towards maximum level as long as scans do not take too long to complete (see scan timeout).
-> If adaptive is disabled then 'cache_dirs' will always scan to the max level.
+> 启用自适应后，会自动调整扫描深度，但不会超过最大深度。
+> 扫描从第 1 层开始，只要扫描耗时未超限，就会逐步增加深度，直至最大深度（参阅扫描超时时间）。
+> 禁用自适应后，cache_dirs 始终扫描至最大深度。
 :end
 
 :cachedirs_min_level_plug:
-> Sets the minimum folder level for the adaptive scan (user-share > child folder > grand child is two levels). Default is 4.
+> 设置自适应扫描的最小目录深度（用户共享 (User Share) > 子文件夹 > 孙文件夹计为两层）。默认为 4。
 :end
 
 :cachedirs_max_level_plug:
-> Sets the maximum folder levels for the scan (parent > child folder > grand child). Set to 'unlimited' (or 0) to remove maximum
+> 设置扫描的最大目录深度（父文件夹 > 子文件夹 > 孙文件夹）。设为「不限」或 0 可取消上限。
 :end
 
 :cachedirs_idle_timer_plug:
-> When the disks have been idle this long, 'cache_dirs' adaptive scan starts working towards building the cache.
+> 磁盘空闲达到此时长后，cache_dirs 的自适应扫描才开始构建缓存。
 :end
 
 :cachedirs_timeout_scan_plug:
-> Scan timeout is the maximum duration that a single scan through all directories at the current level of depth (which may change adaptively).
-> Increase it if 'cache_dirs' fails in caching all your files. This timeout is always used if adaptive is disabled.
+> 扫描超时时间是以当前深度遍历所有目录时，单次扫描允许的最长耗时；深度可能自适应变化。
+> 如果 cache_dirs 无法缓存所有文件，可增大此值。禁用自适应时始终使用此超时时间。
 :end
 
 :cachedirs_timeout_initial_plug:
-> Increase it if you want 'cache_dirs' too give more time in initial scan, and when filesystem may be busy.
+> 如果希望 cache_dirs 在初次扫描或文件系统繁忙时获得更多扫描时间，请增大此值。
 :end
 
 :cachedirs_timeout_cached_plug:
-> Decrease it if you want 'cache_dirs' to put less load on system when cache is evicted from memory, and disks are not idle.
-> Increase if you want 'cache_dirs' to have a greater chance af getting directories back into memory.
+> 如果希望缓存被移出内存且磁盘尚未空闲时，cache_dirs 对系统造成的负载更低，请减小此值。
+> 如果希望提高 cache_dirs 将目录重新读入内存的机会，请增大此值。
 :end
 
 :cachedirs_min_interval_plug:
-> Tweaking of the caching interval can be done for slower systems. Default value is 1 second, should be alright for most systems.
+> 较慢的系统可调整缓存间隔。默认为 1 秒，适用于大多数系统。
 :end
 
 :cachedirs_max_interval_plug:
-> Tweaking of the caching interval can be done for slower systems. Default value is 10 seconds, should be alright for most systems.
+> 较慢的系统可调整缓存间隔。默认为 10 秒，适用于大多数系统。
 :end
 
 :cachedirs_scan_disk_plug:
-> Each disk will be scanned in a separate thread, so the disks will be read concurrently. If user share is also scanned the user
-> share will be scanned in a single thread after all disks scans are completed, to avoid thrashing disks.
+> 每个磁盘使用独立线程扫描，因此会并发读取多个磁盘。如果同时扫描用户共享 (User Share)，将在所有磁盘扫描完成后，使用单线程扫描用户共享，以减少磁盘反复寻道。
 :end
 
 :cachedirs_limit_memory_plug:
-> set ulimit to NN to limit memory used by script (default=50000), '-U 0' sets no ulimit at all and inherits the shells default.
+> 通过 ulimit 将脚本的内存用量限制为指定值（默认 50000）。'-U 0' 表示不另设 ulimit，而是继承 Shell 的默认限制。
 :end
 
 :cachedirs_logging_plug:
-> Select whether logging is enabled or disabled. Logging will be written to '/var/log/cache_dirs.log' and '/var/log/cache_dirs_lost_cache.csv'.
-> Be aware that the 'cache_dirs' logs are stored in memory on Unraid and are not automatically rotated.
+> 选择启用或禁用日志记录。日志将写入 '/var/log/cache_dirs.log' 和 '/var/log/cache_dirs_lost_cache.csv'。
+> 注意：Unraid 中的 cache_dirs 日志保存在内存中，且不会自动轮转。
 :end
 
 :cachedirs_user_defined_plug:
-> The 'cache_dirs' script has additional options which may be used.
-> Refer to the online documentation to use these as needed,
-> or see the 'cache_dirs' script itself located under '/usr/local/emhttp/plugins/dynamix.cache.dirs/scripts/cache_dirs'.
+> cache_dirs 脚本还提供其他选项，可按需使用。
+> 用法请参阅在线文档，或查看 '/usr/local/emhttp/plugins/dynamix.cache.dirs/scripts/cache_dirs' 脚本。
 >
-> You can instruct 'cache_dirs' to avoid traversing directories by name. For example, the following excludes '.Recycle.Bin', 'temp', and 'log' folders:
+> 可按名称让 cache_dirs 跳过某些目录。例如，以下选项会排除 .Recycle.Bin、temp 和 log 文件夹：
 >
 > <span class="strong orange-text">-a '-noleaf -name .Recycle.Bin -prune -o -name log -prune -o -name temp -prune -o -print'</span>
 >
-> Note that the single quotes around the argument to -a are important. Double quotes do not work in the current version, so it’s not currently possible to filter with '-name "*Old" -prune'.
+> -a 参数外的单引号不可省略。当前版本不支持双引号，因此暂时无法使用 '-name "*Old" -prune' 这样的筛选方式。
 :end

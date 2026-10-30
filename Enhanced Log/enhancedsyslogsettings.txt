@@ -1,163 +1,160 @@
-Configuration=
-Colors=
-Syslog Colors=
-Custom Match=
-Custom Syslog Match Strings=
-Syslog Filter=
-Syslog Configuration=
-Syslog Filter Strings=
-Show All Lines in Log=
-Number of Lines to Display=
-Enable Error Highlighting=
-Enable Minor Issues Highlighting=
-Enable Lime Tech Highlighting=
-Enable Array Highlighting=
-Enable System Highlighting=
-Enable File System Highlighting=
-Enable Drive Related Highlighting=
-Enable Network Highlighting=
-Enable Login Highlighting=
-Enable emhttp Highlighting=
-Enable Other Highlighting=
-Color Selection Chart=
-Error Highlight Color=
-Minor Issues Highlight Color=
-Lime Tech Highlight Color=
-Array Highlight Color=
-System Highlight Color=
-File System Highlight Color=
-Drive Related Highlight Color=
-Network Highlight Color=
-Login Highlight Color=
-emhttp Highlight Color=
-Other Highlight Color=
+Configuration=配置
+Colors=颜色
+Syslog Colors=系统日志颜色
+Custom Match=自定义匹配
+Custom Syslog Match Strings=系统日志自定义匹配字符串
+Syslog Filter=系统日志筛选
+Syslog Configuration=系统日志配置
+Syslog Filter Strings=系统日志筛选字符串
+Show All Lines in Log=显示日志中的所有行
+Number of Lines to Display=显示行数
+Enable Error Highlighting=高亮显示错误
+Enable Minor Issues Highlighting=高亮显示轻微问题
+Enable Lime Tech Highlighting=高亮显示 Lime Tech 信息
+Enable Array Highlighting=高亮显示阵列 (Array) 信息
+Enable System Highlighting=高亮显示系统信息
+Enable File System Highlighting=高亮显示文件系统信息
+Enable Drive Related Highlighting=高亮显示驱动器相关信息
+Enable Network Highlighting=高亮显示网络信息
+Enable Login Highlighting=高亮显示登录信息
+Enable emhttp Highlighting=高亮显示 emhttp 信息
+Enable Other Highlighting=高亮显示其他信息
+Color Selection Chart=颜色选择表
+Error Highlight Color=错误高亮颜色
+Minor Issues Highlight Color=轻微问题高亮颜色
+Lime Tech Highlight Color=Lime Tech 信息高亮颜色
+Array Highlight Color=阵列 (Array) 信息高亮颜色
+System Highlight Color=系统信息高亮颜色
+File System Highlight Color=文件系统信息高亮颜色
+Drive Related Highlight Color=驱动器相关信息高亮颜色
+Network Highlight Color=网络信息高亮颜色
+Login Highlight Color=登录信息高亮颜色
+emhttp Highlight Color=emhttp 信息高亮颜色
+Other Highlight Color=其他信息高亮颜色
 ;
 ; Help
 ;
 :enhanced_syslog_show_all_lines_plug:
-> Set to **Yes** to show all lines in the enhanced log.  Set to **No** to show only highlighted lines.
+> 设为**是**，显示增强日志中的所有行；设为**否**，只显示高亮行。
 :end
 
 :enhanced_log_number_of_lines_plug:
-> Number of lines to display in the Enhanced Syslog.  Default is 1000.
+> 增强系统日志中显示的行数，默认为 1000。
 :end
 
 :enhanced_log_enable_error_plug:
-> Set to **Yes** to enable **Errors** highlighting in the enhanced log.
+> 设为**是**，在增强日志中高亮显示**错误**。
 :end
 
 :enhanced_log_enable_minor_plug:
-> Set to **Yes** to enable **Minor Issues** highlighting in the enhanced log.
+> 设为**是**，在增强日志中高亮显示**轻微问题**。
 :end
 
 :enhanced_log_enable_limetch_plug:
-> Set to **Yes** to enable **Lime Tech** highlighting in the enhanced log.
+> 设为**是**，在增强日志中高亮显示 **Lime Tech** 信息。
 :end
 
 :enhanced_log_enable_array_plug:
-> Set to **Yes** to enable **Array** highlighting in the enhanced log.
+> 设为**是**，在增强日志中高亮显示**阵列 (Array)**信息。
 :end
 
 :enhanced_log_enable_system_plug:
-> Set to **Yes** to enable **System** highlighting in the enhanced log.
+> 设为**是**，在增强日志中高亮显示**系统**信息。
 :end
 
 :enhanced_log_enable_file_system_plug:
-> Set to **Yes** to enable **File System** highlighting in the enhanced log.
+> 设为**是**，在增强日志中高亮显示**文件系统**信息。
 :end
 
 :enhanced_log_enable_drive_plug:
-> Set to **Yes** to enable **Drive Related** highlighting in the enhanced log.
+> 设为**是**，在增强日志中高亮显示**驱动器相关**信息。
 :end
 
 :enhanced_log_enable_network_plug:
-> Set to **Yes** to enable **Network** highlighting in the enhanced log.
+> 设为**是**，在增强日志中高亮显示**网络**信息。
 :end
 
 :enhanced_log_enable_login_plug:
-> Set to **Yes** to enable **Login** highlighting in the enhanced log.
+> 设为**是**，在增强日志中高亮显示**登录**信息。
 :end
 
 :enhanced_log_enable_emhttp_plug:
-> Set to **Yes** to enable **emhttp** highlighting in the enhanced log.
+> 设为**是**，在增强日志中高亮显示 **emhttp** 信息。
 :end
 
 :enhanced_log_enable_other_plug:
-> Set to **Yes** to enable **Other** highlighting in the enhanced log.
+> 设为**是**，在增强日志中高亮显示**其他**信息。
 :end
 
 :enhancd_log_default_plug:
-> **Default** resets the Configuration and Colors.  Click **Apply** to save your changes.  Click **Done** when you are finished with your changes.
+> **默认**可重置配置和颜色。点击**应用**保存更改，全部更改完成后点击**完成**。
 :end
 
 :enhanced_log_color_error_plug:
-> Color to use for **Error** highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> **错误**的高亮颜色。可以使用颜色名称或以 '#' 开头的颜色代码。
 :end
 
 :enhanced_log_color_minor_plug:
-> Color to use for **Minor Issues** highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> **轻微问题**的高亮颜色。可以使用颜色名称或以 '#' 开头的颜色代码。
 :end
 
 :enhanced_log_color_limetech_plug:
-> Color to use for **Lime Tech** highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> **Lime Tech** 信息的高亮颜色。可以使用颜色名称或以 '#' 开头的颜色代码。
 :end
 
 :enhanced_log_color_array_plug:
-> Color to use for **Array** highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> **阵列 (Array)**信息的高亮颜色。可以使用颜色名称或以 '#' 开头的颜色代码。
 :end
 
 :enhanced_log_color_system_plug:
-> Color to use for **System** highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> **系统**信息的高亮颜色。可以使用颜色名称或以 '#' 开头的颜色代码。
 :end
 
 :enhanced_log_color_file_system_plug:
-> Color to use for **File System** highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> **文件系统**信息的高亮颜色。可以使用颜色名称或以 '#' 开头的颜色代码。
 :end
 
 :enhanced_log_color_drive_plug:
-> Color to use for **Drive Related** highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> **驱动器相关**信息的高亮颜色。可以使用颜色名称或以 '#' 开头的颜色代码。
 :end
 
 :enhanced_log_color_network_plug:
-> Color to use for **Network** highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> **网络**信息的高亮颜色。可以使用颜色名称或以 '#' 开头的颜色代码。
 :end
 
 :enhanced_log_color_login_plug:
-> Color to use for **Login** highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> **登录**信息的高亮颜色。可以使用颜色名称或以 '#' 开头的颜色代码。
 :end
 
 :enhanced_log_color_emhttp_plug:
-> Color to use for **emhttp** highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> **emhttp** 信息的高亮颜色。可以使用颜色名称或以 '#' 开头的颜色代码。
 :end
 
 :enhanced_log_color_other_plug:
-> Color to use for **Other** highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> **其他**信息的高亮颜色。可以使用颜色名称或以 '#' 开头的颜色代码。
 :end
 
 :enhanced_log_custom_plug:
-> Enter any custom events you want highlighted in the log.  Any custom events you enter will be processed after the built in events.
-> The events are entered as: "search string", "event"
-> Case is ignored in the search string and wild cards are allowed.
-> Examples:
-> "found.*chip" will match any string with 'found' and 'chip' with any text in between,
-> "(spinup|spindown)" will match any string with either 'spinup' or 'spindown'.
-> The search string and event are quoted, and each line contains one match string and event combination.  Errors in the strings can cause php errors.
-> Events are: "error", "minor issues", "lime tech", "array", "system", "file system", "drive related", "network", "login", "emhttp", "other".
+> 输入要在日志中高亮显示的自定义事件。自定义事件在内置事件之后处理。
+> 输入格式为："search string", "event"。
+> 搜索字符串忽略大小写，并允许模式匹配。例如：
+> "found.*chip" 可匹配同时包含 found 和 chip、且两者之间有任意文本的字符串；
+> " (spinup|spindown) " 可匹配包含 spinup 或 spindown 的字符串。
+> 搜索字符串和事件均须用引号括起，每行填写一组。字符串错误可能导致 PHP 错误。
+> 可用事件为："error", "minor issues", "lime tech", "array", "system", "file system", "drive related", "network", "login", "emhttp", "other"。
 :end
 
 :enhanced_log_custom_buttons_plug:
-> Click the **Apply** button to save your custom events.  Click **Reset** to
-> undo any changes you make before you have saved the custom events. Click **Done** to exit this page.
+> 点击**应用**保存自定义事件。保存前点击**重置**可撤销更改。点击**完成**退出此页面。
 :end
 
 :enhanced_log_filter_plug:
-> You can filter out log entries to keep your Syslog from being overwhelmed with debug or redundant log entries.  You should only filter out log entries that you know are unnecessary or redundant.
-> Because the Syslog is important for debugging issues, don’t filter out entries unnecessarily.
+> 可以过滤日志条目，避免系统日志被调试信息或重复记录淹没。只应过滤明确不必要或重复的条目。
+> 系统日志对故障排查十分重要，请勿随意过滤。
 >
-> Enter the log strings you want to filtered from the Syslog.  Each entry is on a separate line with leading and trailing quotes.
+> 输入需要从系统日志中过滤的字符串，每行一项，首尾加引号。
 :end
 
 :enhanced_log_filter_buttons_plug:
-> Click the **Apply** button to Apply the Syslog filter. Click **Reset** to
-> undo any changes you make before you have saved the Syslog filter. Click **Done** to exit this page.
+> 点击**应用**使系统日志筛选生效。保存前点击**重置**可撤销更改。点击**完成**退出此页面。
 :end

@@ -1,0 +1,36 @@
+name: Publish language pack
+on:
+  push:
+    tags: ['v20*']
+permissions:
+  contents: read
+concurrency:
+  group: language-release
+  cancel-in-progress: false
+jobs:
+  checks:
+    uses: ./.github/workflows/ci.yml
+  publish:
+    needs: checks
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Verify release identity
+        run: |
+          test "$GITHUB_REF_NAME" = "v$(cat VERSION)"
+          git merge-base --is-ancestor "$GITHUB_SHA" origin/main
+      - name: Build release artifacts
+        run: python3 tools/build.py
+      - name: Publish complete release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/* \
+            --verify-tag --draft --title "简体中文语言包 $GITHUB_REF_NAME" \
+            --notes-file RELEASE-NOTES.md
+          gh release edit "$GITHUB_REF_NAME" --draft=false --latest

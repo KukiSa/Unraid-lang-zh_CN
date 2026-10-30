@@ -1,40 +1,40 @@
-Any=
-Daily schedule=
-Day Date=Day / Date
-Hour=
-Hourly schedule=
-Minute=
-Monthly schedule=
-Scheduled Tasks=
-Weekly schedule=
-Day of the month=
-Day of the week=
-Every 2 hours=
-Every 3 hours=
-Every 4 hours=
-Every 6 hours=
-Every 8 hours=
-Every hour=
+Any=任意
+Daily schedule=每日计划
+Day Date=星期 / 日期
+Hour=时
+Hourly schedule=每小时计划
+Minute=分
+Monthly schedule=每月计划
+Scheduled Tasks=计划任务
+Weekly schedule=每周计划
+Day of the month=每月几号
+Day of the week=星期几
+Every 2 hours=每 2 小时
+Every 3 hours=每 3 小时
+Every 4 hours=每 4 小时
+Every 6 hours=每 6 小时
+Every 8 hours=每 8 小时
+Every hour=每小时
 HHMM=HH:MM
-SSD TRIM schedule=
-Time of the day=
+SSD TRIM schedule=SSD TRIM 计划
+Time of the day=每天的时间
 
 :trim_schedule_plug:
-> Choose a trim schedule ranging from hourly, daily, weekly and monthly.
+> 选择每小时、每天、每周或每月执行 TRIM 的计划。
 >
-> The interval determines how often SSD trim will run, it runs in the background.
+> 此间隔决定 SSD TRIM 的执行频率，操作在后台运行。
 :end
 
 :trim_day_of_the_week_plug:
-> Choose a day when the weekly schedule is selected. Otherwise disabled.
+> 使用每周计划时选择执行日期，其他情况下此项不可用。
 :end
 
 :trim_day_of_the_month_plug:
-> Choose a date when the monthly schedule is selected. Otherwise disabled.
+> 使用每月计划时选择执行日期，其他情况下此项不可用。
 :end
 
 :trim_time_of_the_day_plug:
-> When an hourly schedule is selected this will set the interval in hours. An interval always starts on the whole hour (minute 0).
+> 使用每小时计划时，此项设置间隔小时数。始终从整点（第 0 分钟）开始计算。
 >
-> For the other schedules choose here the time of the day trim should start.
+> 使用其他计划时，在此选择每天开始执行 TRIM 的时间。
 :end

@@ -1,0 +1,29 @@
+name: Check English upstream
+on:
+  schedule:
+    - cron: '23 2 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Detect changes requiring translation
+        run: python3 tools/upstream.py
+      - name: Summarize differences
+        if: always()
+        run: |
+          if [ -f build/upstream-report.md ]; then
+            cat build/upstream-report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: upstream-differences
+          path: build/upstream-report.*
+          if-no-files-found: warn

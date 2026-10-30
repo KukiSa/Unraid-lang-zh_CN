@@ -1,1 +1,1 @@
-Search WebGUI=
+Search WebGUI=搜索 WebGUI

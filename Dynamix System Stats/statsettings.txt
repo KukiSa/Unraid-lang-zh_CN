@@ -1,85 +1,85 @@
-30 seconds=
-1 minute=
-2 minutes=
-5 minutes=
-10 minutes=
-30 minutes=
-1 hour=
-2 hours=
-Bits per second=
-Bytes per second=
-CPU graph scaling=
-Disk Stats=
-Ethernet interface=
-Four=
-Header menu=
-Initial graphing mode=
-Initial real-time sliding window=
-Last day=
-Last 2 days=
-Last 3 days=
-Last week=
-Last 2 weeks=
-Last 3 weeks=
-Last month=
-Network graph display unit=
-Opening page=
-Pair=
-Placement of Stats menu=
-Position of disk utilization percentage=
-Real-time=
-Show disk size=
-Since start=
-Single=
-Storage=
-System graphs view per row=
-System Stats=
-Three=
-Tools menu=
-Viewable system graphs=
+30 seconds=30 秒
+1 minute=1 分钟
+2 minutes=2 分钟
+5 minutes=5 分钟
+10 minutes=10 分钟
+30 minutes=30 分钟
+1 hour=1 小时
+2 hours=2 小时
+Bits per second=比特 / 秒
+Bytes per second=字节 / 秒
+CPU graph scaling=CPU 图表纵轴范围
+Disk Stats=磁盘统计
+Ethernet interface=以太网接口
+Four=四个
+Header menu=顶部菜单
+Initial graphing mode=初始图表模式
+Initial real-time sliding window=初始实时滑动窗口
+Last day=过去一天
+Last 2 days=过去两天
+Last 3 days=过去三天
+Last week=过去一周
+Last 2 weeks=过去两周
+Last 3 weeks=过去三周
+Last month=过去一个月
+Network graph display unit=网络图表显示单位
+Opening page=初始页面
+Pair=两个
+Placement of Stats menu=统计菜单位置
+Position of disk utilization percentage=磁盘使用率百分比的位置
+Real-time=实时
+Show disk size=显示磁盘容量
+Since start=自启动以来
+Single=一个
+Storage=存储
+System graphs view per row=每行系统图表数
+System Stats=系统统计
+Three=三个
+Tools menu=工具菜单
+Viewable system graphs=显示的系统图表
 
 :stats_utilization_plug:
-> The disk utilization percentage number can be positioned either at the start (left) or at the end (right) of the bar.
+> 磁盘使用率百分比可显示在进度条起点（左侧）或终点（右侧）。
 >
-> Left will align all numbers, while right lets the number float depending on its value.
+> 左侧可使所有数值对齐；右侧则随进度条的值浮动。
 :end
 
 :stats_graphs_plug:
-> Select which system information needs to be displayed. Internally all information is always gathered and stored.
+> 选择要显示的系统信息。内部始终收集并保存所有信息。
 >
-> This setting only affects what is being displayed.
+> 此设置只影响显示内容。
 :end
 
 :stats_scaling_plug:
-> Select the CPU graph scaling to be automatic or fixed at 100%.
+> 选择 CPU 图表纵轴自动缩放，或固定为 100%。
 :end
 
 :stats_view_plug:
-> Select how many graphs will be displayed in a single row. The width is automatically adjusted to the number of graphs and the screen resolution.
+> 选择每行显示的图表数量。图表宽度会根据数量和屏幕分辨率自动调整。
 >
-> Graph samples are internally done with a one minute interval, this setting does not change the resolution, just the width of a graph.
+> 内部每分钟采样一次；此设置只改变图表宽度，不改变采样精度。
 :end
 
 :stats_disk_size_plug:
-> Show the size of each disk at the right side of the disk usage graph. Size is always displayed using the highest possible unit.
+> 在磁盘使用情况图表右侧显示每个磁盘的容量，始终使用尽可能大的单位。
 :end
 
 :stats_ethernet_plug:
-> When more than one interface is present then select the interface to be displayed. Internally statistics of all available interfaces is kept.
+> 存在多个接口时，选择要显示的接口。内部会保留所有可用接口的统计信息。
 :end
 
 :stats_unit_plug:
-> Select how interface (network) speeds are displayed, common is bits per second.
+> 选择网络接口速率的显示单位，通常使用比特 / 秒。
 :end
 
 :stats_initial_plug:
-> The system graphs can be viewed over different periods, select here the initial period. On the system stats page itself this can be changed to any of the other choices.
+> 系统图表支持查看不同时间范围，在此选择初始范围。之后可在系统统计页面切换。
 >
-> Internally information is kept with a monthly rotating mechanism. Each day is stored in a separate file.
+> 内部按月轮转保存数据，每天使用独立文件。
 :end
 
 :stats_realtime_plug:
-> Real-time graphing is done in a sliding window fashion. E.g. 5 minutes are first filled and next start to slide with each new sample added at the end.
+> 实时图表使用滑动窗口。例如选择 5 分钟时，先填满 5 分钟的数据，此后每次在末尾添加新采样时，窗口向前滑动。
 >
-> This setting sets the initial duration of the sliding window, it can be changed on the system stats page itself.
+> 此处设置滑动窗口的初始时长，也可在系统统计页面更改。
 :end

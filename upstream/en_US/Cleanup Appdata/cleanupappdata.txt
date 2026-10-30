@@ -1,0 +1,19 @@
+The author takes no responsibility if you blindly accept the folders offered to delete=
+Docker Not Running=
+Because the docker service is not currently running, this module will prompt you to delete the appdata for any/all docker applications which are installed=
+Are You Sure=
+Are you sure you want to delete these folders Read this carefully as there is no recovery in the event of a mistake=
+Delete=
+Deleting Folders=
+Depending upon the size of the folders, this may take a few minutes=
+Deleted=
+The following appdata paths have been determined based upon your previously installed applications to be no longer in use Select which ones you would like to be deleted=The following appdata paths have been determined (based upon your previously installed applications) to be no longer in use Select which ones you would like to be deleted
+Note that this module reviews all of your previously installed Docker Containers to determine which appdata folders are abandoned. If you deleted the previously installed list (either through Community Applications or manually), those results will not be displayed. In other words, if there is no record for a folder within the previously installed Containers, you will not be prompted to delete it.
+In the case of a severely misconfigured previously installed app, the entire contents of a share may be proposed for deletion. It is your responsibility to confirm the folders proposed for deletion. If you inadvertently delete a share you intended to keep due to misconfiguration, the deletion is not reversible and the plugin author assumes no responsibility=In the case of a severely misconfigured previously installed app, the entire contents of a share **may be proposed for deletion**. It is your responsibility to confirm the folders proposed for deletion. If you inadvertently delete a share you intended to keep due to misconfiguration, the deletion is not reversible and the plugin author assumes no responsibility
+Select All=
+Delete Selected=
+Done=
+Credits=
+For support for this plugin, visit here=
+HERE=
+Plugin Version=

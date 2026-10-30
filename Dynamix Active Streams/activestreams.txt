@@ -1,17 +1,17 @@
-Halt=
-Host Address=
-Host=
-No active streams=
-Playtime=
-Stop stream=
-Stream=
-User Name=
-User=
+Halt=终止
+Host Address=主机地址
+Host=主机
+No active streams=没有活动的数据流
+Playtime=播放时长
+Stop stream=停止数据流
+Stream=数据流
+User Name=用户名
+User=用户
 
 :streams_plug:
-> Give symbolic names to IP addresses, which are displayed on the active streams page.
+> 为 IP 地址设置易于识别的名称，这些名称会显示在活动数据流页面。
 >
-> New IP addresses are automatically added to the list when detected.
+> 检测到新的 IP 地址后，会自动添加到列表。
 >
-> To remove a name association, clear the respective user name box and press apply.
+> 要解除名称关联，请清空对应的用户名输入框并点击「应用」。
 :end

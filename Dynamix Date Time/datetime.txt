@@ -1,41 +1,41 @@
-Current date and time=
-Hide map=
-New date and time=
-NTP server=
-Show map=
-Time zone=
-Use NTP=
+Current date and time=当前日期和时间
+Hide map=隐藏地图
+New date and time=新的日期和时间
+NTP server=NTP 服务器
+Show map=显示地图
+Time zone=时区
+Use NTP=使用 NTP
 
 :timezone_plug:
-> Select your applicable time zone from the drop-down list.
+> 从下拉列表中选择适用的时区。
 :end
 
 :datetime_map_plug:
-> The world map highlights the current selected time zone.
+> 世界地图会高亮显示当前所选时区。
 >
-> Use your mouse to move over the map and click on the country for which you want to set the time zone. The appropriate zone is automatically selected in the drop-down list.
+> 将鼠标移到地图上，点击要设置时区的国家 / 地区，下拉列表会自动选择对应时区。
 :end
 
 :use_ntp_plug:
-> Select 'Yes' to use Network Time Protocol to keep your server time accurate.
-> We **highly** recommend the use of a network time server, especially if you plan on using Active Directory.
+> 选择「是」，通过网络时间协议 (NTP) 保持服务器时间准确。
+> **强烈**建议使用网络时间服务器，尤其是在计划使用 Active Directory 时。
 :end
 
 :ntp_server1_plug:
-> This is the primary NTP server to use.  Enter a FQDN or an IP address.
+> 设置首选 NTP 服务器，输入完全限定域名 (FQDN) 或 IP 地址。
 :end
 
 :ntp_server2_plug:
-> This is the alternate NTP server to use if NTP Server 1 is down.
+> NTP 服务器 1 不可用时使用的备用 NTP 服务器。
 :end
 
 :ntp_server3_plug:
-> This is the alternate NTP Server to use if NTP Servers 1 and 2 are both down.
+> NTP 服务器 1 和 2 均不可用时使用的备用 NTP 服务器。
 :end
 
 :ntp_server4_plug:
-> This is the alternate NTP Server to use if NTP Servers 1, 2, and 3 are all down.
+> NTP 服务器 1、2 和 3 均不可用时使用的备用 NTP 服务器。
 :end
 :current_time_plug:
-> Enter the current time-of-day.  Use format YYYY-MM-DD HH:MM:SS. Greyed out when using NTP.
+> 输入当前日期和时间，格式为 YYYY-MM-DD HH:MM:SS。使用 NTP 时此项不可编辑。
 :end

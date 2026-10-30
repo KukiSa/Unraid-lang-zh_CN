@@ -1,24 +1,23 @@
-Current elected master=
-is current local master browser=
-Local master=
-Monitor local master election=
-please wait, obtaining=
-Workgroup=
+Current elected master=当前选出的主浏览器
+is current local master browser=是当前的本地主浏览器
+Local master=本地主浏览器
+Monitor local master election=监视本地主浏览器选举
+please wait, obtaining=请稍候，正在获取
+Workgroup=工作组
 
 :smb_workgroup_plug:
-> Enter your local network Workgroup name. Usually this is "WORKGROUP".
+> 输入本地网络的工作组名称，通常为 WORKGROUP。
 :end
 
 :smb_master_plug:
-> If set to 'Yes' then the server will fully participate in browser elections, and in the absense
-> of other servers, will usually become the local Master Browser.
+> 设为「是」后，服务器会完整参与主浏览器选举。在没有其他服务器的情况下，通常会成为本地主浏览器 (Local Master Browser)。
 :end
 
 :smb_master_election_plug:
-> Enable or disable background monitoring of the local master election.
-> The result of the monitoring is displayed in the header at the top-right position.
+> 启用或禁用对本地主浏览器选举的后台监控。
+> 监控结果显示在页眉右上角。
 :end
 
 :smb_master_current_plug:
-> Shows in real-time the current elected local master browser.
+> 实时显示当前选出的本地主浏览器。
 :end

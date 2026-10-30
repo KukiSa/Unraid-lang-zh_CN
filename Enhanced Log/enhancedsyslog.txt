@@ -1,4 +1,4 @@
-Enhanced System Log=
-Minor Issues=
-File System=
-Drive Related=
+Enhanced System Log=增强系统日志
+Minor Issues=轻微问题
+File System=文件系统
+Drive Related=驱动器相关

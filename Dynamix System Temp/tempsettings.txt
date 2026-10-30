@@ -1,42 +1,42 @@
-Array fan speed=
-Available drivers=
-Click DETECT=
-Detect=
-Load drivers=
-Mainboard temperature=
-No drivers detected=
-Not used=
-Perl must be installed to do automated driver detection=**Perl** must be installed to do automated driver detection
-Processor temperature=
-Rescan=
-Save=
-Sensors=
-Unload drivers=
+Array fan speed=阵列 (Array) 风扇转速
+Available drivers=可用驱动程序
+Click DETECT=点击「检测」
+Detect=检测
+Load drivers=加载驱动程序
+Mainboard temperature=主板温度
+No drivers detected=未检测到驱动程序
+Not used=未使用
+Perl must be installed to do automated driver detection=必须安装 **Perl** 才能自动检测驱动程序
+Processor temperature=处理器温度
+Rescan=重新扫描
+Save=保存
+Sensors=传感器
+Unload drivers=卸载驱动程序
 
 :temp_drivers_plug:
-> Use 'detect' to search for available drivers using the 'sensors-detect' script. After detection proceed with saving the list.<br>
-> Use 'save' to store the drivers list to disk, the drivers field may be edited before saving (e.g. add a non-specified driver). Saving is mandatory.<br>
-> Use 'load drivers / unload drivers' to manually load or unload the available driver modules.
+> 点击「检测」，通过 sensors-detect 脚本查找可用驱动程序，检测完成后请保存列表。<br>
+> 点击「保存」，将驱动程序列表写入磁盘。保存前可以编辑驱动字段，例如补充未列出的驱动。必须执行保存。<br>
+> 点击「加载驱动程序 / 卸载驱动程序」，手动加载或卸载可用驱动模块。
 :end
 
 :temp_processor_plug:
-> Select one of the available probes as the processor temperature indicator.
-> The output of this probe is shown at the bottom of the page.
-> Select 'Not used' to suppress display of this probe.
+> 选择一个可用传感器作为处理器温度指示器。
+> 此传感器的读数显示在页面底部。
+> 选择「未使用」可隐藏此读数。
 :end
 
 :temp_mainboard_plug:
-> Select one of the available probes as the mainboard temperature indicator.
-> The output of this probe is shown at the bottom of the page.
-> Select 'Not used' to suppress display of this probe.
+> 选择一个可用传感器作为主板温度指示器。
+> 此传感器的读数显示在页面底部。
+> 选择「未使用」可隐藏此读数。
 :end
 
 :temp_fan_plug:
-> Select one of the available probes as the array fan speed indicator.
-> The output of this probe is shown at the bottom of the page.
-> Select 'Not used' to suppress display of this probe.
+> 选择一个可用传感器作为阵列 (Array) 风扇转速指示器。
+> 此传感器的读数显示在页面底部。
+> 选择「未使用」可隐藏此读数。
 :end
 
 :temp_rescan_plug:
-> 'Rescan' refreshes the selection list and can be used when new probes are available, e.g. a new fan probe has been installed.
+> 「重新扫描」会刷新选择列表；添加了新传感器（例如新的风扇传感器）后可以使用。
 :end

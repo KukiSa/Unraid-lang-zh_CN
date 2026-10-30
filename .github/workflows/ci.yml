@@ -1,0 +1,46 @@
+name: Validate language pack
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['8.3', '8.5']
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: shivammathur/setup-php@d52fc211a0436f8839a587b3b5b8efddab4744ea # v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: zip, simplexml
+          coverage: none
+      - name: Check source ancestry
+        run: |
+          source_commit=$(python3 -c 'import json; print(json.load(open("source.lock.json"))["english_commit"])')
+          git merge-base --is-ancestor "$source_commit" HEAD
+      - name: Build and validate
+        run: |
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          python3 tools/build.py
+          php tests/runtime.php
+          node --check build/translate.zh_CN.js
+          node tests/javascript.cjs
+          bash -n install-offline.sh restore-language.sh
+      - name: Upload validation evidence
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: validation-php-${{ matrix.php }}
+          path: |
+            build/validation.json
+            build/runtime.json
+            build/javascript-result.json
+          if-no-files-found: error

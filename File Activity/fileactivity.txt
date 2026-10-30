@@ -1,40 +1,40 @@
-Display Events=
-File Activity=
-File Activity Monitoring=
-Start File Activity=
-Stop File Activity Monitoring=
-Clear the File Activity log=
-Refresh Page=
-Enable File Activity Monitoring=
-Enable for Unassigned Devices=
-Enable for Cache and Pool Disks=
+Display Events=显示事件
+File Activity=文件活动
+File Activity Monitoring=文件活动监控
+Start File Activity=启动文件活动监控
+Stop File Activity Monitoring=停止文件活动监控
+Clear the File Activity log=清空文件活动日志
+Refresh Page=刷新页面
+Enable File Activity Monitoring=启用文件活动监控
+Enable for Unassigned Devices=为 Unassigned Devices 启用
+Enable for Cache and Pool Disks=为缓存和存储池 (Pool) 磁盘启用
 ;
 ; Help
 ;
 :file_activity_logging_plug:
-> File Activity Monitoring:
+> 文件活动监控：
 >
-> File open, read, write, and modify activity is monitored and logged on the array using inotify and is displayed by disk or share, UD disks, and cache.
-> You need to start the File Activity in order to log the disk activity.
-> File Activity is intended to be running for short periods so you can check disk activity.
-> A server with a lot of file activity can fill the log space.
-> The 'appdata', 'docker', 'syslogs', and 'system' directories (case insensitive) are excluded.
+> 使用 inotify 监控并记录阵列 (Array) 中文件的打开、读取、写入和修改活动，按磁盘或共享、UD 磁盘及缓存分类显示。
+> 必须启动文件活动监控，才会记录磁盘活动。
+> 此功能适合短时间运行，用于检查磁盘活动情况。
+> 文件活动较多的服务器可能耗尽日志空间。
+> appdata、docker、syslogs 和 system 目录会被排除，名称不区分大小写。
 >
-> Note: File Activity monitoring is stopped if the array is stopped, and will restart when the array is started if it is enabled.
+> 注意：阵列停止时，文件活动监控也会停止；如果已启用，则在阵列启动时重新开始。
 :end
 
 :file_activity_enable_logging_plug:
-> Set to **Yes** to enable File Activity monitoring when the server is started.
+> 设为**是**，在服务器启动时启用文件活动监控。
 :end
 
 :file_activity_enable_ud_plug:
-> Set to **Yes** to enable File Activity monitoring for Unassigned Devices if the Unassigned Devices plugin is installed.
+> 已安装 Unassigned Devices 插件时，设为**是**可监控其设备的文件活动。
 :end
 
 :file_activity_enable_cache_plug:
-> Set to **Yes** to enable File Activity monitoring for the Cache and Pool Disks.
+> 设为**是**，为缓存和存储池 (Pool) 磁盘启用文件活动监控。
 :end
 
 :file_activity_display_events_plug:
-> This is the number of file events shown on disks and shares from the File Activity log for each share or disk.
+> 设置每个磁盘或共享显示多少条来自文件活动日志的文件事件。
 :end

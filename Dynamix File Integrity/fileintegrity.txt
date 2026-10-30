@@ -1,134 +1,132 @@
-Apple metadata=
-Array must be Started to use this feature=Array must be **Started** to use this feature
-Automatically protect new and modified files=
-BLAKE2=
-Build=
-Continue=
-Corz=
-Custom files=
-Custom folders=
-Day of the month=
-Day of the week=
-Disk selection=
-Disk verification schedule=
-Dont start=Don’t start
-Download Now=
-Dynamix File Integrity=
-Error logging=
-Excluded files=
-Excluded folders and files=
-Excluded folders=
-File Duplicates Check=
-Find=
-Generate Corz Files=
-hash files=
-Hashing method=
-Header menu=
+Apple metadata=Apple 元数据
+Array must be Started to use this feature=必须**启动**阵列 (Array) 才能使用此功能
+Automatically protect new and modified files=自动为新建和已修改的文件提供完整性保护
+BLAKE2=BLAKE2
+Build=生成
+Continue=继续
+Corz=Corz
+Custom files=自定义文件
+Custom folders=自定义文件夹
+Day of the month=每月几号
+Day of the week=星期几
+Disk selection=选择磁盘
+Disk verification schedule=磁盘验证计划
+Dont start=不启动
+Download Now=立即下载
+Dynamix File Integrity=Dynamix 文件完整性
+Error logging=错误日志记录
+Excluded files=排除的文件
+Excluded folders and files=排除的文件夹和文件
+Excluded folders=排除的文件夹
+File Duplicates Check=重复文件检查
+Find=查找
+Generate Corz Files=生成 Corz 文件
+hash files=哈希文件
+Hashing method=哈希算法
+Header menu=顶部菜单
 HHMM=HH:MM
-Import=
-Include duplicate file hashes in Find command=Include duplicate file hashes in **Find** command
-log files=
-Low=
-MD5=
-Output file=
-Placement of file integrity control=
-Process priority=
-Save new hashing results to flash=
-saved files=
-Send notifications=
-SHA2=
-Syslog only=
-Syslog Output file=Syslog & Output file
-Task=
-Time of the day=
-Toggle all=
-Tools menu=
-Verification tasks=
-view hash files=
-view log files=
-view saved files=
-When parity operation is running=
+Import=导入
+Include duplicate file hashes in Find command=在**查找**操作中包含重复的文件哈希
+log files=日志文件
+Low=低
+MD5=MD5
+Output file=输出文件
+Placement of file integrity control=文件完整性控件的位置
+Process priority=进程优先级
+Save new hashing results to flash=将新生成的哈希结果保存到启动闪存盘
+saved files=已保存的文件
+Send notifications=发送通知
+SHA2=SHA2
+Syslog only=仅系统日志
+Syslog Output file=系统日志和输出文件
+Task=任务
+Time of the day=每天的时间
+Toggle all=切换所有选项
+Tools menu=工具菜单
+Verification tasks=验证任务
+view hash files=查看哈希文件
+view log files=查看日志文件
+view saved files=查看已保存的文件
+When parity operation is running=正在执行奇偶校验 (Parity) 操作时
 
 :integrity_control_plug:
-> Select the placement of the file integrity control page. By default it is placed under the *Tools* menu, but it may be moved under the *header* menu.
+> 选择文件完整性控制页面的位置。默认位于*工具*菜单，也可以移至*顶部*菜单。
 >
-> Keep in mind that the *header* menu has limited space.
+> 请注意，*顶部*菜单的空间有限。
 :end
 
 :integrity_service_plug:
-> When enabled a checksum value is automatically calculated and added to the extended attributes of the newly created or modified file.
-> When it is detected that a file change has occurred, but its modification time hasn’t changed, then an automatic checksum verification is performed to check for any silent file corruption.
+> 启用后，会自动计算新建或已修改文件的校验和，并将其写入文件的扩展属性。
+> 如果检测到文件发生变化，但修改时间未变，则自动验证校验和，检查是否存在静默数据损坏 (Silent Corruption)。
 >
-> The area selection can be filtered by excluding folders (shares) and/or excluding disks all together (see table below).
+> 可以排除文件夹（共享）或整个磁盘，限制处理范围（参阅下表）。
 >
-> When the automatic hashing is disabled then manual control is required to keep information up-to-date.
+> 禁用自动哈希计算后，需要手动操作，才能保持记录为最新。
 :end
 
 :integrity_hashing_plug:
-> Select the preferred hashing method. SHA2 generates a 256 bits checksum value, MD5 generates a 128 bits checksum value, while BLAKE2 generates a 512 bits checksum value per file.
+> 选择哈希算法。SHA2 为每个文件生成 256 位校验和，MD5 生成 128 位校验和，BLAKE2 生成 512 位校验和。
 >
-> MD5 is the most commonly used method and should be selected when compatibility with external programs is required, BLAKE2 is the fastest method and has the highest detection grade, this is a proprietary solution though.
-> SHA2 is the official standard and is selected by default. It is the slowest of all three methods though. The BLAKE2 option is disabled if it is not supported by your processor.
-> All methods require substantial computing power from the processor and a too weak processor may not be able to perform up to expectations.
+> MD5 使用最广泛，需要与外部程序兼容时应选择它。BLAKE2 在此实现中速度最快、检测能力最强，但使用专门的实现。
+> SHA2 是正式标准，也是默认选项，但在这三种算法中速度最慢。处理器不支持 BLAKE2 时，此选项不可用。
+> 所有算法都需要较多计算资源，性能较弱的处理器可能无法达到预期速度。
 :end
 
 :integrity_flash_plug:
-> When enabled a daily file on the flash device will be created, holding the checksum results for all newly or modified files of that particular day.
-> The format of this file is the same as the standard export file. The daily file is saved as */config/plugins/dynamix.file.integrity/saved/disks.export.&lt;date&gt;.new.hash*
+> 启用后，会在启动闪存盘上按天创建文件，记录当天所有新建或已修改文件的校验和。
+> 文件格式与标准导出文件相同，保存路径为 */config/plugins/dynamix.file.integrity/saved/disks.export.&lt;date&gt;.new.hash*。
 :end
 
 :integrity_exluded_plug:
-> Select here any folders (shares) you want to exclude from the automatic hashing and verification functionality. A share existing on multiple disks will be skipped on any disk where it is present.
+> 选择要从自动哈希计算和验证中排除的文件夹（共享）。跨多个磁盘存在的共享，会在所有对应磁盘上被跳过。
 >
-> Use **Custom folders / Custom files** to manually enter exclusions. Multiple exclusions are separated by a comma.<br>
-> Examples are folder names, e.g. **`.Recycle.Bin`**, file names, e.g. **`my_workfile.tmp`** or file extensions, e.g. **`*.tmp`**.
+> 使用**自定义文件夹 / 自定义文件**手动输入排除项，多个项目以逗号分隔。<br>
+> 例如文件夹名称 **`.Recycle.Bin`**、文件名 **`my_workfile.tmp`**，或文件扩展名 **`*.tmp`**。
 >
-> Select **Apple metadata** to exclude metadata files created by Apple’s netatalk (.AppleDB and .DS_Store).
+> 勾选 **Apple 元数据**，可排除 Apple netatalk 创建的元数据文件（.AppleDB 和 .DS_Store）。
 :end
 
 :integrity_verification_plug:
-> When enabled a cron schedule is created to do file verification in the background. You need to select which disks participate in the automatic hashing and verification process (see table below).
-> The cron schedule can run on a selectable daily, weekly or monthly basis.
+> 启用后，会创建 cron 计划，在后台验证文件。请在下表中选择参与自动哈希计算和验证的磁盘。
+> 可以按天、周或月执行。
 >
-> One or more tasks can be created, each containing one or more disks. All disks under the same task are verified in parallel. This decreases the total run-time, but increases the
-> processor load. Make sure your processor can handle this load, and change grouping accordingly. At one end all disks can be put in a single task, resulting in the highest concurrency.
-> At the other end every disk can be put in its own task, resulting in the lowest processor load.
+> 可以创建一个或多个任务，每个任务包含一个或多个磁盘。同一任务中的磁盘会并行验证，可缩短总耗时，但会增加处理器负载。
+> 请确保处理器能承受此负载，并相应调整分组。将所有磁盘放入同一任务，并发度最高；每个磁盘各自一个任务，处理器负载最低。
 >
-> A disk with a disabled checksum box and a red background, indicates a background verification process is currently in progress for this disk. It can not be stopped.
+> 某磁盘的复选框不可用且背景为红色，表示该磁盘正在后台验证，无法停止。
 >
-> When multiple tasks exist then each task is executed in the next schedule in a rotating fashion. E.g. when you have set up a weekly schedule with 3 tasks then every week
-> another task is executed and after 3 weeks the verification function has done all selected disks.
+> 存在多个任务时，每次计划时间到达后依次轮流执行一个任务。例如，每周执行且有 3 个任务，则每周执行不同的任务，3 周后完成全部所选磁盘的验证。
 >
-> When the verification schedule is disabled then manual control is required to verify the correctness of the files.
+> 禁用验证计划后，需要手动验证文件是否正确。
 :end
 
 :integrity_priority_plug:
-> Background processes can be run in either normal or low priority mode.
+> 后台进程可使用正常或低优先级运行。
 :end
 
 :integrity_parity_plug:
-> Before a verification task starts, it can either continue as usual when a parity operation is running, or the verification task doesn’t start at all.
-> In the latter case you need to wait for the next scheduled time to execute the task.
+> 如果验证任务即将开始时正在执行奇偶校验 (Parity) 操作，可以选择照常运行验证，或不启动验证。
+> 选择后者时，需要等待下一次计划时间才能执行该任务。
 :end
 
 :integrity_day_of_the_week_plug:
-> When a weekly schedule is chosen, then select here the day of execution.
+> 使用每周计划时，在此选择执行的星期几。
 :end
 
 :integrity_day_of_the_month_plug:
-> When a monthly schedule is chosen, then select here the date of execution.
+> 使用每月计划时，在此选择执行日期。
 :end
 
 :integrity_time_of_the_day_plug:
-> Select the hour and minute at which time the scheduled task will be executed. Granularity is 5 minutes.
+> 选择计划任务执行的小时和分钟，时间间隔为 5 分钟。
 :end
 
 :integrity_notifications_plug:
-> Set to YES if you want to receive notifications when file corruption is detected.
-> See the notification settings on how to set up and receive "alert" notifications.
+> 如果希望检测到文件损坏时收到通知，请设为「是」。
+> 如何配置和接收「警报」通知，请参阅通知设置。
 :end
 
 :integrity_logging_plug:
-> Error logging, including file corruption detection information can be given in the system log, or saved as a file on flash.
-> Disabling error logging will suppress log creation, but it is still possible to receive notifications.
+> 错误日志（包括文件损坏检测信息）可写入系统日志，或保存为启动闪存盘上的文件。
+> 禁用错误日志后不再创建日志，但仍可接收通知。
 :end
